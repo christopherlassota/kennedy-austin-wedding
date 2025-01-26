@@ -12,6 +12,10 @@
     height: 80vh;
   }
 
+  @include desktop {
+    height: 95vh
+  }
+
   &__invitation {
     @include flex-center(column);
     background-color: hsla(0, 100, 28 , 0.3);
@@ -19,6 +23,10 @@
     padding: 1rem;
 
     @include tablet {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    @include desktop {
         padding: 2rem;
     }
   }
@@ -28,13 +36,23 @@
     opacity: 1;
 
     @include tablet {
+        font-size: 64px;
+    }
+
+    @include desktop {
         font-size: 128px;
         padding: 2rem;
     }
   }
 
   &__date {
+
     @include tablet {
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+    @include desktop {
         padding: 2rem;
         font-size: 32px;
     }
@@ -48,7 +66,7 @@
     margin: 0rem 1rem 1rem 1rem;
     padding: 0.5rem 1.5rem;
 
-    @include tablet {
+    @include desktop {
         font-size: 32px;
     }
 
@@ -56,5 +74,4 @@
         background-color: $active;
     }
   }
-
 }
