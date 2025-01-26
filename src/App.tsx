@@ -1,10 +1,14 @@
-import './App.scss'
-import Header from './Components/Header/Header'
+import "./App.scss";
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
 
 const App = () => {
   return (
-    < Header/>
-  )
-}
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
+};
 
-export default App
+export default App;

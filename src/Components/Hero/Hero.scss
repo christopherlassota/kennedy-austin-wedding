@@ -1,0 +1,60 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.hero {
+  @include flex-center(column, flex-end);
+  background-image: url(../../assets/images/vince-fleming-NUHSbynw9IE-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+
+  @include tablet {
+    height: 80vh;
+  }
+
+  &__invitation {
+    @include flex-center(column);
+    background-color: hsla(0, 100, 28 , 0.3);
+    margin: 1rem;
+    padding: 1rem;
+
+    @include tablet {
+        padding: 2rem;
+    }
+  }
+
+  &__title {
+    color: $primary-text;
+    opacity: 1;
+
+    @include tablet {
+        font-size: 128px;
+        padding: 2rem;
+    }
+  }
+
+  &__date {
+    @include tablet {
+        padding: 2rem;
+        font-size: 32px;
+    }
+  }
+
+  &__rsvp {
+    background-color: $primary-background;
+    font-size: 24px;
+    color: $primary-text;
+    border: none;
+    margin: 0rem 1rem 1rem 1rem;
+    padding: 0.5rem 1.5rem;
+
+    @include tablet {
+        font-size: 32px;
+    }
+
+    &:hover {
+        background-color: $active;
+    }
+  }
+
+}
