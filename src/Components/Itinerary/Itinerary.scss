@@ -59,9 +59,9 @@
         }
     }
 
-    &__schedule {
+    // &__schedule {
 
-    }
+    // }
 
     &__timeslot {
         @include flex-center(column);
@@ -86,12 +86,15 @@
     }
 
     &__event-list {
-        width: 70%;
+
+        @include tablet {
+            width: 70%;
+        }
     }
 
-    &__event {
+    // &__event {
 
-    }
+    // }
 
     &__event-title {
         text-align: center;
