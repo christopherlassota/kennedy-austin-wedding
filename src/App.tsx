@@ -1,6 +1,7 @@
 import "./App.scss";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
+import Itinerary from "./Components/Itinerary/Itinerary";
 import Story from "./Components/Story/Story";
 import Venue from "./Components/Venue/Venue";
 
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Story />
       <Venue />
+      <Itinerary />
     </>
   );
 };

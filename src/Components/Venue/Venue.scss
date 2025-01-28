@@ -119,6 +119,10 @@
 
   &__button-container {
     @include flex-center;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
   }
 
   &__button {

@@ -1,0 +1,113 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.itinerary {
+    @include flex-center(column);
+    margin: 1rem;
+
+    @include tablet {
+        margin: 2rem 4rem;
+    }
+
+    @include desktop {
+        margin: 2rem 16rem;
+    }
+
+    &__title {
+        padding: 0 0 2rem 0;
+    }
+
+    &__date-list {
+        display: none;
+        
+        @include tablet {
+            @include flex-center(row, space-between);
+            width: 70%;
+            padding: 0 0 2rem 0;
+        }
+
+        @include desktop {
+            width: 55%;
+        }
+    }
+
+    &__dates {
+        opacity: 50%;
+
+        &--selected {
+            opacity: 100%;
+            border-bottom: 1px solid $primary-text
+        }
+    }
+
+    &__date-selector {
+        @include flex-center(row, space-between);
+        width: 100%;
+        padding: 0 1rem;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__selection {
+        opacity: 50%;
+
+        &--selected {
+            opacity: 100%;
+            border-bottom: 1px solid $primary-text
+        }
+    }
+
+    &__schedule {
+
+    }
+
+    &__timeslot {
+        @include flex-center(column);
+        padding: 1.5rem 0;
+
+        @include tablet {
+            @include flex-center(row, space-between);
+        }
+
+        @include desktop {
+            width: 80%;
+        }
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 1.5rem;
+
+        @include tablet {
+            align-self: flex-start;
+        }
+    }
+
+    &__event-list {
+        width: 70%;
+    }
+
+    &__event {
+
+    }
+
+    &__event-title {
+        text-align: center;
+        font-size: 1.75rem;
+        padding: 2rem;
+
+        @include tablet {
+            text-align: left;
+            padding: 0 0 2rem 0;
+        }
+    }
+
+    &__description {
+
+        @include tablet {
+            padding-bottom: 2rem;
+        }
+    }
+}
