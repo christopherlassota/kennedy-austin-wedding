@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import Itinerary from "./Components/Itinerary/Itinerary";
 import Registry from "./Components/Registry/Registry";
+import RSVP from "./Components/RSVP/RSVP";
 import Story from "./Components/Story/Story";
 import Venue from "./Components/Venue/Venue";
 
@@ -15,6 +16,7 @@ const App = () => {
       <Venue />
       <Itinerary />
       <Registry />
+      <RSVP />
     </>
   );
 };
