@@ -31,6 +31,7 @@
 
     &__logos {
     @include flex-center(row);
+    display: none;
     }
 
     &__logos-left {

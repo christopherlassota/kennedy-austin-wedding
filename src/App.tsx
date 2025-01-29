@@ -1,4 +1,6 @@
 import "./App.scss";
+import BottomDecoration from "./Components/BottomDecoration/BottomDecoration";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import Itinerary from "./Components/Itinerary/Itinerary";
@@ -17,6 +19,8 @@ const App = () => {
       <Itinerary />
       <Registry />
       <RSVP />
+      <Footer />
+      <BottomDecoration />
     </>
   );
 };
