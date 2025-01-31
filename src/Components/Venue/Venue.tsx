@@ -3,7 +3,7 @@ import "./Venue.scss";
 
 const Venue = () => {
   return (
-    <section className="venue">
+    <section className="venue" id="venue">
       <article className="venue__content">
         <div className="venue__title-image">
           <article className="venue__name">

@@ -6,7 +6,7 @@ import "./Registry.scss";
 
 const Registry = () => {
   return (
-    <section className="registry">
+    <section className="registry" id="registry">
       <h2 className="registry__title">Registry</h2>
       <article className="registry__content">
         <article className="registry__logos">

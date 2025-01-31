@@ -5,7 +5,7 @@ import "./Story.scss";
 
 const Story = () => {
   return (
-    <section className="story">
+    <section className="story" id="story">
       <div className="story__centerflower">
         <CenterFlower />
       </div>

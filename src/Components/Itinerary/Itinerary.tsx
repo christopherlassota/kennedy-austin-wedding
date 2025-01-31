@@ -2,7 +2,7 @@ import "./Itinerary.scss";
 
 const Itinerary = () => {
   return (
-    <section className="itinerary">
+    <section className="itinerary" id="itinerary">
       <h2 className="itinerary__title">Itinerary</h2>
       <ul className="itinerary__date-list">
         <li className="itinerary__dates itinerary__dates--selected">

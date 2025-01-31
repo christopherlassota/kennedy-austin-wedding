@@ -2,7 +2,7 @@ import "./RSVP.scss";
 
 const RSVP = () => {
   return (
-    <section className="rsvp">
+    <section className="rsvp" id="rsvp">
       <h2 className="rsvp__title">RSVP</h2>
       <p className="rsvp__description">
         Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut
