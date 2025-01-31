@@ -3,7 +3,12 @@
 
 .header {
     @include flex-center(row, space-between);
+    background-color: $primary-background;
+    position: fixed;
+    width: 100%;
     padding: 1rem 2rem;
+    border-bottom: 1px solid $primary-text;
+    z-index: 5;
 
     @include tablet {
         padding: 1rem 4rem;

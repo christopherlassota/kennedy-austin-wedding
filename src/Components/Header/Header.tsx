@@ -15,7 +15,6 @@ const Header = () => {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-200}
             duration={700}
           >
             Home
@@ -26,7 +25,6 @@ const Header = () => {
             to="story"
             spy={true}
             smooth={true}
-            offset={50}
             duration={700}
           >
             Our Story
@@ -37,7 +35,7 @@ const Header = () => {
             to="venue"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-50}
             duration={700}
           >
             Venue
@@ -48,7 +46,7 @@ const Header = () => {
             to="itinerary"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-125}
             duration={700}
           >
             Itinierary
@@ -59,7 +57,7 @@ const Header = () => {
             to="registry"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-70}
             duration={700}
           >
             Registry
@@ -70,7 +68,7 @@ const Header = () => {
             to="rsvp"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-100}
             duration={700}
           >
             RSVP
