@@ -16,32 +16,4 @@
     &__logo-text {
         font-size: 32px;
     }
-
-    &__signature {
-        padding: 2rem;
-    }
-
-    &__flowerpot {
-        padding: 2rem;
-
-        @include tablet {
-            @include flex-center(row, space-between);
-            width: 100%;
-        }
-    }
-
-    &__centerflower {
-        @include tablet {
-            display: none;
-        }
-    }
-
-    &__cornerflowers {
-        display: none;
-
-        @include tablet {
-            @include flex-center(row,space-between);
-            width: 100%;
-        }
-    }
 }

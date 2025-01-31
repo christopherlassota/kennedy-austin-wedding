@@ -11,12 +11,20 @@
         }
     
     &__centerflower {
+        gap: 1rem;
+
         @include tablet {
             display: none;
         }
     }
+    
+    &__flowerpot {
+        @include flex-center;
+        margin-bottom: 5rem;
+    }
                     
     &__cornerflowers {
+        @include flex-center(column);
         display: none;
         
         @include tablet {

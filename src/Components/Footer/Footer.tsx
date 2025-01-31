@@ -6,7 +6,6 @@ const Footer = () => {
       <div className="footer__logo">
         <h2 className="footer__logo-text">KA</h2>
       </div>
-      <p className="footer__signature">Website by Christopher Lassota</p>
     </section>
   );
 };
