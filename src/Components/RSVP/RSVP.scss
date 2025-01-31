@@ -14,8 +14,8 @@
     padding: 2rem 16rem;
   }
 
-  &__title {
-  }
+  // &__title {
+  // }
 
   &__description {
     margin: 2rem 0;
@@ -64,9 +64,9 @@
     border: none;
   }
 
-  &__legend {
+  // &__legend {
 
-  }
+  // }
 
   &__option {
     @include flex-center(row, flex-start);
