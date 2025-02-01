@@ -1,6 +1,7 @@
 import CenterFlower from "../../Iconography/CenterFlower/CenterFlower";
 import CornerFlowerLeft from "../../Iconography/CornerFlowers/CornerFlowerLeft";
 import CornerFlowerRight from "../../Iconography/CornerFlowers/CornerFlowerRight";
+import ImageSlider from "../ImageSlider/ImageSlider";
 import "./Story.scss";
 
 const Story = () => {
@@ -33,7 +34,7 @@ const Story = () => {
             Faucibus sed egestas mollis vivamus et sed sed.
           </p>
         </article>
-        <div className="story__image"></div>
+        <ImageSlider />
       </article>
     </section>
   );

@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.imageslider {
+
+    &__container {
+        display: flex;
+        // overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        
+    }
+}
