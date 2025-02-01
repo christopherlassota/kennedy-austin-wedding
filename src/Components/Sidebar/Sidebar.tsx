@@ -1,43 +1,30 @@
-import Menu from "../../Iconography/Menu/Menu";
-import "./Header.scss";
+import "./Sidebar.scss";
 import { Link as Scroll } from "react-scroll";
 
-interface HeaderProps {
-  clickHandler: () => void;
-}
-
-const Header = ({ clickHandler }: HeaderProps) => {
+const Sidebar = () => {
   return (
-    <section className="header">
-      <h4 className="header__altlogo">Kennedy and Austin</h4>
-      <div className="header__logo">
-        <h2 className="header__logo-text">KA</h2>
-      </div>
-      <div className="header__menu">
-        <Menu clickHandler={clickHandler}/>
-      </div>
-      <ul className="header__nav">
-        <li className="header__nav-item">
+    <section className="sidebar">
+      <ul className="sidebar__nav">
           <Scroll
             to="hero"
             spy={true}
             smooth={true}
             duration={700}
           >
-            Home
-          </Scroll>
-        </li>
         <li className="header__nav-item">
+            Home
+        </li>
+          </Scroll>
           <Scroll
             to="story"
             spy={true}
             smooth={true}
             duration={700}
           >
-            Our Story
-          </Scroll>
-        </li>
         <li className="header__nav-item">
+            Our Story
+        </li>
+          </Scroll>
           <Scroll
             to="venue"
             spy={true}
@@ -45,10 +32,10 @@ const Header = ({ clickHandler }: HeaderProps) => {
             offset={-50}
             duration={700}
           >
-            Venue
-          </Scroll>
-        </li>
         <li className="header__nav-item">
+            Venue
+        </li>
+          </Scroll>
           <Scroll
             to="itinerary"
             spy={true}
@@ -56,10 +43,10 @@ const Header = ({ clickHandler }: HeaderProps) => {
             offset={-125}
             duration={700}
           >
-            Itinierary
-          </Scroll>
-        </li>
         <li className="header__nav-item">
+            Itinierary
+        </li>
+          </Scroll>
           <Scroll
             to="registry"
             spy={true}
@@ -67,10 +54,10 @@ const Header = ({ clickHandler }: HeaderProps) => {
             offset={-70}
             duration={700}
           >
+        <li className="header__nav-item">
             Registry
-          </Scroll>
         </li>
-        <li className="header__nav-item header__nav-item--highlight">
+          </Scroll>
           <Scroll
             to="rsvp"
             spy={true}
@@ -78,12 +65,13 @@ const Header = ({ clickHandler }: HeaderProps) => {
             offset={-100}
             duration={700}
           >
+        <li className="header__nav-item header__nav-item--highlight">
             RSVP
-          </Scroll>
         </li>
+          </Scroll>
       </ul>
     </section>
   );
 };
 
-export default Header;
+export default Sidebar;
