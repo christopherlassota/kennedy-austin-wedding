@@ -3,6 +3,7 @@ import image1 from "../../assets/images/sandy-millar-8vaQKYnawHw-unsplash.jpg";
 import image3 from "../../assets/images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg";
 import image4 from "../../assets/images/photos-by-lanty-O38Id_cyV4M-unsplash.jpg";
 import image5 from "../../assets/images/samantha-gades-x40Q9jrEVT0-unsplash.jpg";
+import { ChevronRight, ChevronLeft } from 'lucide-react'
 import { useState } from "react";
 
 const ImageSlider = () => {
@@ -37,11 +38,11 @@ const ImageSlider = () => {
           />
         ))}
       </div>
-      <button className="imageslider__button" onClick={prevImage}>
-        Previous
+      <button className="imageslider__button imageslider__button--left" onClick={prevImage}>
+        <ChevronLeft className="imageslider__chevron" />
       </button>
-      <button className="imageslider__button" onClick={nextImage}>
-        Next
+      <button className="imageslider__button imageslider__button--right" onClick={nextImage}>
+        <ChevronRight className="imageslider__chevron" />
       </button>
     </section>
   );
