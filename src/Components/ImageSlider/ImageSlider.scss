@@ -46,7 +46,7 @@
         }
 
         &:hover{
-            background-color: hsla(255,255,255 , 0.3);
+            background-color: rgba(255,255,255,0.3);
         }
     }
 
@@ -59,4 +59,35 @@
             height: 4rem;
             }
         }
+
+    &__tracker {
+        @include flex-center;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        translate: -40%;
+        display: flex;
+        gap: .25rem;
+
+        @include tablet {
+            translate: -50%;
+        }
+    }
+    
+    &__selection {
+        all: unset;
+    }
+
+    &__circle {
+        cursor: pointer;
+        height: 0.75rem;
+        width: 0.75rem;
+        fill: rgba(255,255,255,0.5);
+        stroke: none;
+
+        &--current {
+            height: 0.85rem;
+            width: 0.85rem;
+        }
+    }
 }
