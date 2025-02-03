@@ -25,7 +25,9 @@ const Venue = () => {
               quam diam felis, fringilla varius.
             </p>
             <div className="venue__button-container">
-              <button className="venue__button">Map of Venue</button>
+              <a href="#" className="venue__anchor">
+                <button className="venue__button">Map of Venue</button>
+              </a>
             </div>
           </li>
           <li className="venue__item">
@@ -36,7 +38,9 @@ const Venue = () => {
               quam diam felis, fringilla varius.
             </p>
             <div className="venue__button-container">
-              <button className="venue__button">View Hotels</button>
+              <a href="#" className="venue__anchor">
+                <button className="venue__button">View Hotels</button>
+              </a>
             </div>
           </li>
           <li className="venue__item">
@@ -47,7 +51,9 @@ const Venue = () => {
               quam diam felis, fringilla varius.
             </p>
             <div className="venue__button-container">
-              <button className="venue__button">See our Favorites</button>
+              <a href="#" className="venue__anchor">
+                <button className="venue__button">See our Favorites</button>
+              </a>
             </div>
           </li>
         </ul>

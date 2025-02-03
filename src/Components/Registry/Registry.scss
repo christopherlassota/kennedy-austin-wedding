@@ -23,7 +23,7 @@
         }
 
         @include desktop {
-            gap: 8rem
+            gap: 6rem
         }
     }
 
@@ -54,8 +54,17 @@
         }
     }
 
-    &__text {
-        @include tablet {
-        }
+    // &__text {
+    //     @include tablet {
+    //     }
+    // }
+
+    &__button-anchor {
+        align-self: flex-start;
     }
+
+    &__button {
+        @include button;
+        margin-top: 2rem;
+      }
 }

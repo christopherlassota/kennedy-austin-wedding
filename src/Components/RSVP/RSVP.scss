@@ -102,10 +102,6 @@
   }
 
   &__button {
-    background-color: $primary-text;
-    font-size: 22px;
-    color: $primary-background;
-    border: none;
-    padding: 0.5rem 1.5rem;
+    @include button;
   }
 }

@@ -23,6 +23,14 @@ const Registry = () => {
           adipiscing sem.
         </p>
       </article>
+      <a
+        href="https://www.myregistry.com/wedding-registry/kennedy-laing-and-austin-bercier-chestermere-ab/4449897"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="registry__button-anchor"
+      >
+        <button className="registry__button">View Registry</button>
+      </a>
     </section>
   );
 };
