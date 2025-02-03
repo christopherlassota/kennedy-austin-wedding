@@ -3,6 +3,7 @@
 
 .registry {
     @include flex-center(column);
+    width: 100%;
     padding: 1rem;
 
     @include tablet {
@@ -14,12 +15,36 @@
     }
     
     &__content {
-        
+        @include flex-center(column-reverse);
+
         @include tablet {
             @include flex-center(row-reverse);
             gap: 4rem;
         }
+
+        @include desktop {
+            gap: 8rem
+        }
     }
+
+    &__anchor {
+        @include flex-center;
+    }
+
+    &__logo {
+        width: 80%;
+        padding: 1rem 0;
+        cursor: pointer;
+
+        @include tablet {
+            width: 100%;
+        }
+    
+        @include desktop {
+            width: 50%;
+        }
+    }
+
 
     &__title {
         padding-bottom: 2rem;
@@ -29,30 +54,8 @@
         }
     }
 
-    &__logos {
-    @include flex-center(row);
-    display: none;
-    }
-
-    &__logos-left {
-        // width: 50%;
-        // position: relative;
-        // left: 7%;
-
-        // @include tablet {
-        //     position: revert;
-        //     left: 0%;
-        // }
-    }
-    
-    &__logos-right {
-        width: 50%;
-    }
-
     &__text {
-
         @include tablet {
-
         }
     }
 }

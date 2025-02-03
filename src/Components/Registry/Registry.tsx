@@ -1,7 +1,3 @@
-import Blossom from "../../Iconography/Blossom/Blossom";
-import Dune from "../../Iconography/Dune/Dune";
-import Minty from "../../Iconography/Minty/Minty";
-import Terra from "../../Iconography/Terra/Terra";
 import "./Registry.scss";
 
 const Registry = () => {
@@ -9,16 +5,17 @@ const Registry = () => {
     <section className="registry" id="registry">
       <h2 className="registry__title">Registry</h2>
       <article className="registry__content">
-        <article className="registry__logos">
-          <div className="registry__logos-left">
-            <Minty />
-            <Terra />
-          </div>
-          <div className="registry__logos-right">
-            <Dune />
-            <Blossom />
-          </div>
-        </article>
+        <a
+          href="https://www.myregistry.com/wedding-registry/kennedy-laing-and-austin-bercier-chestermere-ab/4449897"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="registry__anchor"
+        >
+          <img
+            className="registry__logo"
+            src="/src/assets/images/registrylogo.png"
+          />
+        </a>
         <p className="registry__text">
           Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi.
           Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu
