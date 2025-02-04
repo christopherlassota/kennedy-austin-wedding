@@ -20,36 +20,36 @@
   &__description {
     margin: 2rem 0;
   }
-
+  
   &__form {
     @include flex-center(column);
     width: 100%;
     gap: 1rem;
-
+    
     @include tablet {
-        padding: 0 8rem
+      padding: 0 8rem
     }
 
     @include desktop {
-        padding: 0 16rem;
+      padding: 0 16rem;
     }
   }
-
+  
   &__group {
     @include flex-center(row, space-between);
     width: 100%;
     gap: 1rem;
   }
-
+  
   &__field {
     @include flex-center(column, flex-start, flex-start);
     width: 100%;
   }
-
+  
   &__label {
     width: 90%;
   }
-
+  
   &__input {
     width: 100%;
     padding: 0.75rem;
@@ -57,8 +57,8 @@
     border: none;
     outline: none;
   }
-
-  &__error {
+  
+  &__error, &__span {
     color: red;
   }
 
@@ -68,11 +68,7 @@
     width: 100%;
     border: none;
   }
-
-  // &__legend {
-
-  // }
-
+  
   &__option {
     @include flex-center(row, flex-start);
     gap: 1rem;
@@ -81,21 +77,21 @@
     border: 1px solid $primary-text;
     cursor: pointer;
   }
-
+  
   &__radio {
     appearance: none;
     background-color: $primary-text;
     width: 1rem;
     height: 1rem;
     content: none;
-
+    
     &:checked {
       appearance: none;
       outline: none;
       padding: 0;
       content: none;
       border: none;
-
+      
       &::before {
         position: absolute;
         color: black;
@@ -106,9 +102,51 @@
       }
     }
   }
-
+  
   &__button {
     @include button;
   }
 
+  &__render {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  &__confirmation {
+    position: absolute;
+    z-index: 1;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-background;
+    transform: translatey(100%);
+    transition: transform 0.5s ease-in-out;
+    border-top:2px solid #820634;
+    border-left:2px solid #820634;
+    border-right:2px solid #63031D;
+    border-bottom:2px solid #63031D;
+
+    &--open {
+      transform: translateY(0);
+    }
+  }
+}
+
+.thank-you {
+  @include flex-center(column);
+  width: 100%;
+  background: $primary-text;
+  color: black;
+  margin: 1rem;
+
+  @include tablet {
+    margin: 2rem;
+  }
+
+  &__title {}
+  &__message {
+    padding: 1rem;
+    text-align: center;
+  }
 }
