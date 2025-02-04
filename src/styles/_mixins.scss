@@ -35,13 +35,15 @@
   outline: none;
   z-index: 1;
   transition: color 300ms ease-in-out;
-  
-  &:hover, &:focus, &:active {
+
+  &:hover,
+  &:focus,
+  &:active {
     color: $primary-background;
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: $primary-text;
     width: 100%;
@@ -53,7 +55,9 @@
     transition: transform 300ms ease-in-out;
   }
 
-  &:hover::before, &:focus::before {
+  &:hover::before,
+  &:focus::before {
     transform: scaleX(1);
   }
 }
+

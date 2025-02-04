@@ -58,6 +58,10 @@
     outline: none;
   }
 
+  &__error {
+    color: red;
+  }
+
   &__fieldset {
     @include flex-center(column, flex-start, flex-start);
     gap: 1rem;
@@ -106,4 +110,5 @@
   &__button {
     @include button;
   }
+
 }
