@@ -60,7 +60,10 @@
     // }
 
     &__button-anchor {
-        align-self: flex-start;
+
+        @include tablet {
+            align-self: flex-start;
+        }
     }
 
     &__button {
