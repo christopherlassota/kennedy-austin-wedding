@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.scss";
 import BottomDecoration from "./Components/BottomDecoration/BottomDecoration";
 import Footer from "./Components/Footer/Footer";
@@ -9,18 +8,13 @@ import Registry from "./Components/Registry/Registry";
 import RSVP from "./Components/RSVP/RSVP";
 import Story from "./Components/Story/Story";
 import Venue from "./Components/Venue/Venue";
-import Sidebar from "./Components/Sidebar/Sidebar";
 
 const App = () => {
-const [menuOpen, setMenuOpen] = useState(false);
-const menuToggle = () => {
-  setMenuOpen(!menuOpen);
-}
 
   return (
     <>
-      {menuOpen === true ? (<Sidebar />) : null}
-      <Header clickHandler={menuToggle}/>
+      
+      <Header />
       <Hero />
       <Story />
       <Venue />
