@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Kennedy and Austin's Wedding Website 💍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, responsive wedding website to share event details, RSVP, and love story with guests.  
+![Kennedy   Austin - Google Chrome 2025-02-05 11_58_23 AM](https://github.com/user-attachments/assets/797e6a1d-450e-4db0-911c-7d4312c0e17a)
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Event Details**: Date, time, venue, and itinerary.
+- **RSVP Form**: Guests can confirm attendance and list and dietary restrictions.
+- **Our Story**: An image carousel and a the couple's story
+- **Photo Gallery**: Curated photos of the couple and venue.
+- **Accommodations & Travel**: Hotel recommendations and directions.
+- **Guestbook**: Leave messages or advice for the couple.
+- **Mobile-Friendly**: Works seamlessly on all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+**Dynamic RSVP Form**
+![dynamicrsvpform](https://github.com/user-attachments/assets/fe434ee6-490a-4740-b5e0-e3c52a5ad71c)
 
-## Expanding the ESLint configuration
+**Smooth Scrolling**
+![smoothscrolling](https://github.com/user-attachments/assets/c0219cfd-74ab-4ce2-b4b7-9bd5bc504453)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Fancy Buttons**
+![fancybuttons](https://github.com/user-attachments/assets/5d78841c-49f3-4b6f-864e-c955445f860a)
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This project is built with modern web technologies for performance and maintainability:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white" /> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" /> <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" /> <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" />
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Additional Libraries:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Luicide-react
+- react-scroll
+- react-router-dom
