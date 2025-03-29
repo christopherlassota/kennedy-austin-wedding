@@ -17,10 +17,7 @@ const Registry = () => {
           />
         </a>
         <p className="registry__text">
-          Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi.
-          Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu
-          euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim
-          adipiscing sem.
+          Your presence at our wedding is the greatest gift we could ask for, and we are so excited to celebrate this momentous occasion with you. If you wish to honor us with a gift, we have a registry with items that would help us as we embark on this new chapter together.
         </p>
       </article>
       <a

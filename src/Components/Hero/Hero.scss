@@ -2,14 +2,13 @@
 @use "../../styles/mixins" as *;
 
 .hero {
-  @include flex-center(column, flex-end);
-  background-image: url(../../assets/images/couple.jpg);
+  @include flex-center(column, center);
+  background-image: url(../../assets/images/Hero/IMG_2220.JPG);
   background-size: cover;
   height: 50vh;  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  perspective: 10px;
 
   @include tablet {
     height: 80vh;
@@ -20,11 +19,11 @@
   }
 
   &__invitation {
-    @include flex-center(column);
-    background-color: hsla(0, 100, 28 , 0.3);
+    @include flex-center(column, flex);
+    background-color: hsla(0, 100, 28 , 0);
     margin: 1rem;
     padding: 1rem;
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
 
     @include tablet {
         padding: 2rem 2rem 0 2rem;

@@ -6,10 +6,10 @@ const Hero = () => {
     <section className="hero" id="hero">
       <article className="hero__invitation">
         <h1 className="hero__title">Kennedy and Austin</h1>
-        <h3 className="hero__date">May 19, 2025 - Calgary Alberta</h3>
+        <h3 className="hero__date">Saturday the 30th of August, 2025</h3>
       </article>
       <a href="" className="hero__anchor">
-        <button className="hero__rsvp">
+        {/* <button className="hero__rsvp"> */}
           <Scroll
             to="rsvp"
             spy={true}
@@ -17,9 +17,9 @@ const Hero = () => {
             offset={-100}
             duration={700}
           >
-            RSVP
+            {/* RSVP */}
           </Scroll>
-        </button>
+        {/* </button> */}
       </a>
     </section>
   );
