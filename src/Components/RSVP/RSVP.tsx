@@ -178,7 +178,7 @@ const RSVP = () => {
                 name="rsvp"
                 className="rsvp__radio"
                 value="accept"
-                checked={rsvpValues.rsvp === "accept"}
+                checked={rsvpValues.rsvp === "Cofirmed"}
                 onChange={handleInputChange}
               />
               <span className="rsvp__text">Accept with pleasure</span>
@@ -191,7 +191,7 @@ const RSVP = () => {
                 name="rsvp"
                 className="rsvp__radio"
                 value="decline"
-                checked={rsvpValues.rsvp === "decline"}
+                checked={rsvpValues.rsvp === "Declined"}
                 onChange={handleInputChange}
               />
               <span className="rsvp__text">Decline with regret</span>
