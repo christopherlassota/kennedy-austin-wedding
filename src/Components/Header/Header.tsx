@@ -1,0 +1,146 @@
+import { useState } from "react";
+import "./Header.scss";
+import { Link as Scroll } from "react-scroll";
+import { Menu, X } from "lucide-react";
+
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false); // Start closing animation
+      setTimeout(() => setShouldRender(false), 300); // Hide after animation completes
+    } else {
+      setShouldRender(true); // Render first
+      setTimeout(() => setMenuOpen(true), 10); // Small delay to trigger transition
+    }
+  };
+
+  return (
+    <section className="header">
+      <h4 className="header__altlogo">Kennedy and Austin</h4>
+      <div className="header__logo">
+        <h2 className="header__logo-text">K</h2>
+        <h2 className="header__logo-text">A</h2>
+      </div>
+      <div className="header__menu" onClick={toggleMenu}>
+        <Menu />
+      </div>
+      <ul className="header__nav">
+        <li className="header__nav-item">
+          <Scroll to="hero" spy={true} smooth={true} duration={700}>
+            Home
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll to="story" spy={true} smooth={true} duration={700}>
+            Our Story
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="venue"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={700}
+          >
+            Venue
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="itinerary"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Itinierary
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="registry"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={700}
+          >
+            Registry
+          </Scroll>
+        </li>
+        <li className="header__nav-item header__nav-item--highlight">
+          <Scroll
+            to="rsvp"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={700}
+          >
+            RSVP
+          </Scroll>
+        </li>
+      </ul>
+      {shouldRender && (
+        <section
+          className={`sidebar ${menuOpen ? "sidebar--active" : ""}`}
+          style={{ display: shouldRender ? "flex" : "none" }}
+        >
+          <div className="sidebar__toggle" onClick={toggleMenu}>
+            <X />
+          </div>
+          <ul className="sidebar__nav">
+            <Scroll to="hero" spy={true} smooth={true} duration={700}>
+              <li className="header__nav-item">Home</li>
+            </Scroll>
+            <Scroll to="story" spy={true} smooth={true} duration={700}>
+              <li className="header__nav-item">Our Story</li>
+            </Scroll>
+            <Scroll
+              to="venue"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
+            >
+              <li className="header__nav-item">Venue</li>
+            </Scroll>
+            <Scroll
+              to="itinerary"
+              spy={true}
+              smooth={true}
+              offset={-125}
+              duration={700}
+            >
+              <li className="header__nav-item">Itinierary</li>
+            </Scroll>
+            <Scroll
+              to="registry"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={700}
+            >
+              <li className="header__nav-item">Registry</li>
+            </Scroll>
+            <Scroll
+              to="rsvp"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={700}
+            >
+              <li className="header__nav-item header__nav-item--highlight">
+                RSVP
+              </li>
+            </Scroll>
+          </ul>
+        </section>
+      )}
+    </section>
+  );
+};
+
+export default Header;

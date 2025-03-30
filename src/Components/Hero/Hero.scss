@@ -1,0 +1,80 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.hero {
+  @include flex-center(column, center);
+  background-image: url(../../assets/images/Hero/IMG_2220.JPG);
+  background-size: cover;
+  height: 50vh;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    height: 80vh;
+  }
+
+  @include desktop {
+    height: 95vh
+  }
+
+  &__invitation {
+    @include flex-center(column, flex);
+    background-color: hsla(0, 100, 28 , 0);
+    margin: 1rem;
+    padding: 1rem;
+    // backdrop-filter: blur(10px);
+
+    @include tablet {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    @include desktop {
+        padding: 2rem;
+    }
+  }
+
+  &__title {
+    color: $primary-text;
+    opacity: 1;
+
+    @include tablet {
+        font-size: 64px;
+    }
+
+    @include desktop {
+        font-size: 128px;
+        padding: 2rem;
+    }
+  }
+
+  &__date {
+
+    @include tablet {
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+    @include desktop {
+        padding: 2rem;
+        font-size: 32px;
+    }
+  }
+
+  &__rsvp {
+    @include button;
+    background-color: $primary-background;
+    font-size: 24px;
+    color: $primary-text;
+    border: none;
+    margin: 0rem 1rem 1rem 1rem;
+
+    @include desktop {
+        font-size: 46px;
+    }
+
+    &:hover {
+        background-color: $active;
+    }
+  }
+}
