@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      
+    
       <Header />
       <Hero />
       <Story />

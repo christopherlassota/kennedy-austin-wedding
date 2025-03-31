@@ -97,25 +97,28 @@ const RSVP = () => {
       setTimeout(() => setConfirmationModal(true), 10); // Small delay to trigger transition
     }
   };
-  
+
   return (
     <section className="rsvp" id="rsvp">
       <h2 className="rsvp__title">RSVP</h2>
       <p className="rsvp__description">
-        Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut
-        in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu
-        euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim
-        adipiscing sem.
+        Your esteemed response is graciously requested no later than Wednesday,
+        the thirtieth of July, two thousand and twenty-five.
       </p>
       <div className="rsvp__render">
         <form onSubmit={handleSubmit} className="rsvp__form">
+          <p className="rsvp__instructions">
+            PLEASE RESPOND FOR EACH GUEST INVITED
+          </p>
           <div className="rsvp__group">
             <div className="rsvp__field">
               <label htmlFor="" className="rsvp__label">
                 {errors.guest_firstname ? (
                   <p className="rsvp__error">{errors.guest_firstname}</p>
                 ) : (
-                  <p>First Name <span className="rsvp__span">*</span></p>
+                  <p>
+                    First Name <span className="rsvp__span">*</span>
+                  </p>
                 )}
               </label>
               <input
@@ -132,7 +135,9 @@ const RSVP = () => {
                 {errors.guest_lastname ? (
                   <p className="rsvp__error">{errors.guest_lastname}</p>
                 ) : (
-                  <p>Last Name <span className="rsvp__span">*</span></p>
+                  <p>
+                    Last Name <span className="rsvp__span">*</span>
+                  </p>
                 )}
               </label>
               <input
@@ -150,7 +155,9 @@ const RSVP = () => {
               {errors.guest_email ? (
                 <p className="rsvp__error">{errors.guest_email}</p>
               ) : (
-                <p>Email Address <span className="rsvp__span">*</span></p>
+                <p>
+                  Email Address <span className="rsvp__span">*</span>
+                </p>
               )}
             </label>
             <input
@@ -167,7 +174,9 @@ const RSVP = () => {
               {errors.rsvp ? (
                 <p className="rsvp__error">{errors.rsvp}</p>
               ) : (
-                <p>Attendance <span className="rsvp__span">*</span></p>
+                <p>
+                  Attendance <span className="rsvp__span">*</span>
+                </p>
               )}
             </legend>
             {/* Radio Option 1 */}
@@ -181,7 +190,7 @@ const RSVP = () => {
                 checked={rsvpValues.rsvp === "Cofirmed"}
                 onChange={handleInputChange}
               />
-              <span className="rsvp__text">Accept with pleasure</span>
+              <span className="rsvp__text">Accepts with pleasure</span>
             </label>
             {/* Radio Option 2 */}
             <label htmlFor="rsvpDecline" className="rsvp__option">
@@ -194,7 +203,7 @@ const RSVP = () => {
                 checked={rsvpValues.rsvp === "Declined"}
                 onChange={handleInputChange}
               />
-              <span className="rsvp__text">Decline with regret</span>
+              <span className="rsvp__text">Declines with regret</span>
             </label>
           </fieldset>
           <div className="rsvp__field">
@@ -212,14 +221,26 @@ const RSVP = () => {
           </div>
           <button className="rsvp__button">Submit</button>
         </form>
-        {renderConfirmation && <article className={`rsvp__confirmation ${confirmationModal ? "rsvp__confirmation--open" : ""}`}
-          style={{ display: renderConfirmation ? "flex" : "flex" }}>
+        {renderConfirmation && (
+          <article
+            className={`rsvp__confirmation ${
+              confirmationModal ? "rsvp__confirmation--open" : ""
+            }`}
+            style={{ display: renderConfirmation ? "flex" : "flex" }}
+          >
             <div className="thank-you">
               <h2 className="thank-you__title">Thank You</h2>
-              <p className="thank-you__message">Your RSVP has been successfully submitted</p>
-              <p className="thank-you__message">We appreciate your RSVP and are looking forward to sharing this special day with you.</p>
+              <p className="thank-you__message">
+                YOUR RSVP HAS BEEN SUCCESSFULLY RECIEVED
+              </p>
+              <p className="thank-you__message">
+                We deeply appreciate your response and eagerly anticipate the
+                joy of your presence as we celebrate this momentous occasion
+                together.
+              </p>
             </div>
-        </article>}
+          </article>
+        )}
       </div>
     </section>
   );
