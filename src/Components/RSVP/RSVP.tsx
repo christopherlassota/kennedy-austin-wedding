@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./RSVP.scss";
+import "dotenv/config";
 
 const RSVP = () => {
   const [rsvpValues, setRsvpValues] = useState({
@@ -63,7 +64,7 @@ const RSVP = () => {
     toggleConfirmationModal();
     try {
       let response = await axios.put(
-        "http://localhost:8080/guestlist",
+        `${process.env.BACKEND_URL}/guestlist`,
         rsvpValues
       );
       console.log("RSVP submitted successfully", response.data);
