@@ -8,21 +8,24 @@ import Registry from "./Components/Registry/Registry";
 import RSVP from "./Components/RSVP/RSVP";
 import Story from "./Components/Story/Story";
 import Venue from "./Components/Venue/Venue";
+import Accommodation from "./Components/Accommodation/Accommodation";
 
 const App = () => {
 
   return (
     <>
-    
+    <section className="page">
       <Header />
       <Hero />
       <Story />
       <Venue />
       <Itinerary />
+      <Accommodation />
       <Registry />
       <RSVP />
       <Footer />
       <BottomDecoration />
+      </section>
     </>
   );
 };

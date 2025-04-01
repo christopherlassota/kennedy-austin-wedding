@@ -1,0 +1,71 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.accommodation {
+    @include flex-center(column);
+    width: 100%;
+    padding: 1rem;
+
+    @include tablet {
+        padding: 2rem 8rem;
+    }
+
+    @include desktop {
+        padding: 4rem 8rem;
+    }
+
+    &__title {
+        padding-bottom: 2rem;
+
+        @include tablet {
+            align-self: flex-start;      
+        }
+    }
+
+    &__content {
+        @include flex-center(column);
+
+        @include tablet {
+            @include flex-center(row);
+            gap: 4rem;
+        }
+
+        @include desktop {
+            gap: 6rem
+        }
+    }
+
+    &__anchor {
+        @include flex-center;
+    }
+
+    &__discount-card {
+        background-color: $primary-text;
+        margin: 1rem
+    }
+
+    &__discount-content {
+        @include flex-center(column);
+        padding: 2rem;
+    }
+
+    &__discount-title {
+        color: $secondary-text;
+        padding: 0.5rem 0;
+    }
+
+    &__discount-text {
+        color: $secondary-text;
+    }
+    
+    &__button-anchor {
+        @include tablet {
+            align-self: flex-start;
+        }
+    }
+
+    &__button {
+        @include button;
+        margin-top: 2rem;
+    }
+}
