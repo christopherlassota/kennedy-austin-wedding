@@ -5,11 +5,15 @@
     @include flex-center(column);
     padding: 1rem;
     
+
+    @include tablet {
+        padding: 4rem;
+    }
     &__title-box {
         padding: 1rem 0
     }
-    &__subtitle {}
-    &__title {}
+    // &__subtitle {}
+    // &__title {}
     &__content {
         @include flex-center(column);
     }
