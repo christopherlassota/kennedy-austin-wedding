@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.reception {
+    &__title-box {}
+    &__subtitle {}
+    &__title {}
+    &__content {}
+    &__image {}
+    &__address {}
+    &__details {}
+    &__time {}
+    &__paragraph {}
+    &__anchor {}
+    &__button {}
+}

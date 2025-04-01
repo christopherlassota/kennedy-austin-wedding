@@ -8,6 +8,8 @@ import RSVP from "./Components/RSVP/RSVP";
 import Story from "./Components/Story/Story";
 import Accommodation from "./Components/Accommodation/Accommodation";
 import DressCode from "./Components/DressCode/DressCode";
+import Reception from "./Components/Reception/Reception";
+import Ceremony from "./Components/Ceremony/Ceremony";
 
 const App = () => {
 
@@ -17,6 +19,8 @@ const App = () => {
       <Header />
       <Hero />
       <Story />
+      <Reception />
+      <Ceremony />
       <DressCode />
       <Accommodation />
       <Registry />
