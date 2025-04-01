@@ -1,2 +1,42 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.ceremony {
+    @include flex-center(column);
+    padding: 1rem;
+    
+    &__title-box {
+        padding: 1rem 0
+    }
+    &__subtitle {}
+    &__title {}
+    &__content {
+        @include flex-center(column);
+    }
+    &__image {
+        background-image: url("../../assets/images/fairmont.png");
+        width: 90%;
+        height: 20vh;
+        background-size: cover;
+    }
+    &__address {
+        padding: 2rem 0;
+    }
+    &__details {
+        @include flex-center(column);
+    }
+    &__time {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &__paragraph {
+        padding: 1rem 0;
+    }
+
+    // &__anchor {}
+
+    &__button {
+        @include button;
+    }
+}

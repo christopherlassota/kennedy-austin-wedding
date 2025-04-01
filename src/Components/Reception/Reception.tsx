@@ -8,7 +8,7 @@ const Reception = () => {
         <h2 className="reception__title">Fairmont Palliser</h2>
       </div>
       <div className="reception__content">
-        <img src="#" alt="#" className="reception__image" />
+        <div className="reception__image"></div>
         <h4 className="reception__address">
           133 9 Ave SW, Calgary, AB T2P 2M3, Canada
         </h4>
