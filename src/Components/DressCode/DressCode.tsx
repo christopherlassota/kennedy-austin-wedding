@@ -12,16 +12,16 @@ const DressCode = () => {
             </p>
         </div>
         <div className="dresscode__content">
+                <p className="dresscode__list-title">Men</p>
             <ul className="dresscode__list">
-                Men
                 <li className="dresscode__item">A tailored tuxedo or dinner jacket with satin lapels</li>
                 <li className="dresscode__item">A crisp white dress shirt</li>
                 <li className="dresscode__item">A classic black bow tie</li>
                 <li className="dresscode__item">Black dress socks and polished formal shoes</li>
                 <li className="dresscode__item">A cummberbun or evening waistcoat for a refined touch</li>
             </ul>
+                <p className="dresscode__list-title">Women</p>
             <ul className="dresscode__list">
-                Women
                 <li className="dresscode__item">A floor length evening gown in luxurious fabrics such as silk, velvet, satin or lace</li>
                 <li className="dresscode__item">Elegant heels or formal flats</li>
                 <li className="dresscode__item">Tasteful accesories, including fine jewelery, a clutch, and an optional wrap or shaw</li>

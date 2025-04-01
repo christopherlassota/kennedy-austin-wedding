@@ -12,19 +12,28 @@
     &__title-box {
         @include flex-center(column);
     }
+
     // &__title {}
     &__subtitle {
         padding: 1rem 0;
     }
+
     &__content {
         @include tablet {
             @include flex-center(row);
         }
     }
+
+    &__list-title {
+        text-decoration: underline;
+    }
+
     &__list {
-        list-style-type: disc;
         padding: 1rem 2rem;
-        width: 50%;
+
+        @include tablet {
+            width: 50%;
+        }
     }
     // &__item {}
     &__learnmore {
@@ -34,6 +43,7 @@
             @include flex-center(row);  
         }
     }
+
     &__image {
         background-image: url("../../assets/images/dresscode.png");
         background-size: cover;
@@ -54,6 +64,7 @@
             padding: 0 3rem;
         }
     }
+
     &__paragraph {
         padding: 1rem 0;
 
