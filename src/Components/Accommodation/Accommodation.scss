@@ -40,22 +40,39 @@
     }
 
     &__discount-card {
-        background-color: $primary-text;
-        margin: 1rem
+        background-color: #FBF8F1;
+        margin: 1rem;
+        box-shadow: 5px 5px 5px hsla(0deg, 0%, 0%, 0.3%);
     }
 
     &__discount-content {
         @include flex-center(column);
-        padding: 2rem;
+        padding: 2rem 1rem;
+
+        @include tablet {
+            padding: 3rem 6rem;
+        }
+
     }
 
     &__discount-title {
         color: $secondary-text;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
+
+        @include tablet {
+            padding-bottom: 3rem;
+        }
+        
     }
 
     &__discount-text {
         color: $secondary-text;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+
+        @include tablet {
+            font-size: 3rem;
+        }
     }
     
     &__button-anchor {
