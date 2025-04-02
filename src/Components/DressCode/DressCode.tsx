@@ -8,7 +8,7 @@ const DressCode = () => {
                 Dress Code
             </h2>
             <p className="dresscode__subtitle">
-                <span>Black tie</span> is the chosen dress code for this special occasion, setting the tone for an evening of elegance and sophistication.
+                <span className='dresscode__span'>Black tie</span> is the chosen dress code for this special occasion, setting the tone for an evening of elegance and sophistication.
             </p>
         </div>
         <div className="dresscode__content">

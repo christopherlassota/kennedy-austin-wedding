@@ -6,7 +6,7 @@
     padding: 1rem;
 
     @include tablet {
-        padding: 1rem 4rem;
+        padding: 4rem 8rem;
     }
 
     &__title-box {
@@ -15,17 +15,24 @@
 
     // &__title {}
     &__subtitle {
-        padding: 1rem 0;
+        padding: 2rem 0;
+    }
+
+    &__span {
+        text-decoration: underline;
     }
 
     &__content {
         @include tablet {
             @include flex-center(row);
+            padding: 2rem 0;
         }
     }
 
     &__list-title {
         text-decoration: underline;
+        width: 8%;
+        align-self: flex-start;
     }
 
     &__list {

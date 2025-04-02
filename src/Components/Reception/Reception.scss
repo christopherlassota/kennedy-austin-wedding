@@ -6,7 +6,7 @@
     padding: 1rem;
 
     @include tablet {
-        padding: 4rem;
+        padding: 4rem 8rem;
     }
     
     &__title-box {
@@ -20,7 +20,7 @@
     &__image {
         background-image: url("../../assets/images/fairmont.png");
         width: 90%;
-        height: 20vh;
+        height: 40vh;
         background-size: cover;
     }
     &__address {

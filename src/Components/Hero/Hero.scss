@@ -5,9 +5,9 @@
   @include flex-center(column, center);
   background-image: url(../../assets/images/Hero/IMG_2220.JPG);
   background-size: cover;
-  height: 50vh;  
-  background-attachment: fixed;
+  height: 90vh;  
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 
   @include tablet {
