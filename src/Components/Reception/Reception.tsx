@@ -2,7 +2,7 @@ import "./Reception.scss";
 
 const Reception = () => {
   return (
-    <section className="reception">
+    <section className="reception" id="reception">
       <div className="reception__title-box">
         <h3 className="reception__subtitle">Venue</h3>
         <h2 className="reception__title">Fairmont Palliser</h2>

@@ -2,7 +2,7 @@ import './DressCode.scss'
 
 const DressCode = () => {
   return (
-    <section className="dresscode">
+    <section className="dresscode" id="dresscode">
         <div className="dresscode__title-box">
             <h2 className="dresscode__title">
                 Dress Code

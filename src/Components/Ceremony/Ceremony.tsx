@@ -2,7 +2,7 @@ import './Ceremony.scss'
 
 const Ceremony = () => {
     return (
-        <section className="ceremony">
+        <section className="ceremony" id="ceremony">
           <div className="ceremony__title-box">
             <h3 className="ceremony__subtitle">Venue</h3>
             <h2 className="ceremony__title">Fairmont Palliser</h2>

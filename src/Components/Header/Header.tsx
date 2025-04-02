@@ -40,24 +40,46 @@ const Header = () => {
         </li>
         <li className="header__nav-item">
           <Scroll
-            to="venue"
+            to="reception"
             spy={true}
             smooth={true}
             offset={-50}
             duration={700}
           >
-            Venue
+            Reception
           </Scroll>
         </li>
         <li className="header__nav-item">
           <Scroll
-            to="itinerary"
+            to="ceremony"
             spy={true}
             smooth={true}
             offset={-125}
             duration={700}
           >
-            Itinierary
+            Ceremony
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="dresscode"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Dress Code
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="accommodation"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Accommodation
           </Scroll>
         </li>
         <li className="header__nav-item">
@@ -92,51 +114,83 @@ const Header = () => {
             <X />
           </div>
           <ul className="sidebar__nav">
-            <Scroll to="hero" spy={true} smooth={true} duration={700}>
-              <li className="header__nav-item">Home</li>
-            </Scroll>
-            <Scroll to="story" spy={true} smooth={true} duration={700}>
-              <li className="header__nav-item">Our Story</li>
-            </Scroll>
-            <Scroll
-              to="venue"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
-            >
-              <li className="header__nav-item">Venue</li>
-            </Scroll>
-            <Scroll
-              to="itinerary"
-              spy={true}
-              smooth={true}
-              offset={-125}
-              duration={700}
-            >
-              <li className="header__nav-item">Itinierary</li>
-            </Scroll>
-            <Scroll
-              to="registry"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={700}
-            >
-              <li className="header__nav-item">Registry</li>
-            </Scroll>
-            <Scroll
-              to="rsvp"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={700}
-            >
-              <li className="header__nav-item header__nav-item--highlight">
-                RSVP
-              </li>
-            </Scroll>
-          </ul>
+        <li className="header__nav-item">
+          <Scroll to="hero" spy={true} smooth={true} duration={700}>
+            Home
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll to="story" spy={true} smooth={true} duration={700}>
+            Our Story
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="reception"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={700}
+          >
+            Reception
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="ceremony"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Ceremony
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="dresscode"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Dress Code
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="accommodation"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={700}
+          >
+            Accommodation
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="registry"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={700}
+          >
+            Registry
+          </Scroll>
+        </li>
+        <li className="header__nav-item header__nav-item--highlight">
+          <Scroll
+            to="rsvp"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={700}
+          >
+            RSVP
+          </Scroll>
+        </li>
+      </ul>
         </section>
       )}
     </section>
