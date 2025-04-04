@@ -3,15 +3,14 @@
 
 .header {
     @include flex-center(row, space-between);
-    background-color: hsla(0, 100, 28 , 0);
-    position: sticky;
+    background-color: hsla(0deg, 100%, 28% , 0%);
+    position: fixed;
     width: 100%;
     padding: 1rem 2rem;
     border-bottom: 1px solid $primary-text;
     z-index: 4;
-    top: 0;
     backdrop-filter: blur(15px);
-
+    
 
     @include tablet {
         padding: 1rem 4rem;
@@ -68,6 +67,7 @@
 
     &__nav {
         display: none;
+        list-style-type: none;
 
         @include tablet {
             @include flex-center(row, space-between);

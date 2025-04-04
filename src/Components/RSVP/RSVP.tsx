@@ -6,7 +6,7 @@ const RSVP = () => {
   const [rsvpValues, setRsvpValues] = useState({
     guest_firstname: "",
     guest_lastname: "",
-    guest_email: "",
+    contact_email: "",
     rsvp: "",
     dietary_restrictions: "",
   });
@@ -14,7 +14,7 @@ const RSVP = () => {
   const [errors, setErrors] = useState({
     guest_firstname: "",
     guest_lastname: "",
-    guest_email: "",
+    contact_email: "",
     rsvp: "",
   });
 
@@ -33,7 +33,7 @@ const RSVP = () => {
     const newErrors = {
       guest_firstname: "",
       guest_lastname: "",
-      guest_email: "",
+      contact_email: "",
       rsvp: "",
     };
     if (!rsvpValues.guest_firstname.trim()) {
@@ -44,8 +44,8 @@ const RSVP = () => {
       newErrors.guest_lastname = "Last Name is Required *";
       isValid = false;
     }
-    if (!rsvpValues.guest_email.trim()) {
-      newErrors.guest_email = "Email Address is Required *";
+    if (!rsvpValues.contact_email.trim()) {
+      newErrors.contact_email = "Email Address is Required *";
       isValid = false;
     }
     if (!rsvpValues.rsvp.trim()) {
@@ -63,21 +63,21 @@ const RSVP = () => {
     toggleConfirmationModal();
     try {
       let response = await axios.put(
-        "http://localhost:8080/guestlist",
+        `${import.meta.env.VITE_BACKEND_URL}/rsvp`,
         rsvpValues
       );
       console.log("RSVP submitted successfully", response.data);
       setRsvpValues({
         guest_firstname: "",
         guest_lastname: "",
-        guest_email: "",
+        contact_email: "",
         rsvp: "",
         dietary_restrictions: "",
       });
       setErrors({
         guest_firstname: "",
         guest_lastname: "",
-        guest_email: "",
+        contact_email: "",
         rsvp: "",
       });
     } catch (error) {
@@ -152,8 +152,8 @@ const RSVP = () => {
           </div>
           <div className="rsvp__field">
             <label htmlFor="" className="rsvp__label">
-              {errors.guest_email ? (
-                <p className="rsvp__error">{errors.guest_email}</p>
+              {errors.contact_email ? (
+                <p className="rsvp__error">{errors.contact_email}</p>
               ) : (
                 <p>
                   Email Address <span className="rsvp__span">*</span>
@@ -162,9 +162,9 @@ const RSVP = () => {
             </label>
             <input
               type="text"
-              id="guest_email"
-              name="guest_email"
-              value={rsvpValues.guest_email}
+              id="contact_email"
+              name="contact_email"
+              value={rsvpValues.contact_email}
               onChange={handleInputChange}
               className="rsvp__input"
             />
@@ -186,8 +186,8 @@ const RSVP = () => {
                 id="rsvpAccept"
                 name="rsvp"
                 className="rsvp__radio"
-                value="accept"
-                checked={rsvpValues.rsvp === "accept"}
+                value="confirmed"
+                checked={rsvpValues.rsvp === "confirmed"}
                 onChange={handleInputChange}
               />
               <span className="rsvp__text">Accepts with pleasure</span>
@@ -199,8 +199,8 @@ const RSVP = () => {
                 id="rsvpDecline"
                 name="rsvp"
                 className="rsvp__radio"
-                value="decline"
-                checked={rsvpValues.rsvp === "decline"}
+                value="declined"
+                checked={rsvpValues.rsvp === "declined"}
                 onChange={handleInputChange}
               />
               <span className="rsvp__text">Declines with regret</span>

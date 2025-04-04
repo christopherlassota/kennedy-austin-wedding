@@ -4,11 +4,28 @@ import image3 from "../../assets/images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg";
 import image4 from "../../assets/images/photos-by-lanty-O38Id_cyV4M-unsplash.jpg";
 import image5 from "../../assets/images/samantha-gades-x40Q9jrEVT0-unsplash.jpg";
 import { ChevronRight, ChevronLeft, Circle} from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ImageSlider = () => {
   const imagesArray = [image1, image3, image4, image5];
   const [imageIndex, setImageIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  useEffect(() => {
+    let intervalId: number;
+
+    if (isAutoPlaying) {
+      intervalId = window.setInterval(() => {
+        nextImage();
+      }, 5000); // 5 seconds
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [imageIndex, isAutoPlaying]);
 
   const nextImage = () => {
     if (imageIndex === imagesArray.length - 1) {
@@ -26,6 +43,22 @@ const ImageSlider = () => {
     }
   };
 
+  // Pause auto-play when user interacts with controls
+  const handleManualControl = (action: () => void) => {
+    setIsAutoPlaying(false);
+    action();
+  };
+
+  useEffect(() => {
+    if (!isAutoPlaying) {
+      const timeoutId = setTimeout(() => {
+        setIsAutoPlaying(true);
+      }, 10000); // Resume auto-play after 10 seconds of inactivity
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isAutoPlaying]);
+
   return (
     <section className="imageslider">
       <div className="imageslider__container">
@@ -40,13 +73,13 @@ const ImageSlider = () => {
       </div>
       <button
         className="imageslider__button imageslider__button--left"
-        onClick={prevImage}
+        onClick={() => handleManualControl(prevImage)}
       >
         <ChevronLeft className="imageslider__chevron" />
       </button>
       <button
         className="imageslider__button imageslider__button--right"
-        onClick={nextImage}
+        onClick={() => handleManualControl(nextImage)}
       >
         <ChevronRight className="imageslider__chevron" />
       </button>
@@ -55,7 +88,7 @@ const ImageSlider = () => {
           <button
             key={index}
             onClick={() => {
-              setImageIndex(index);
+              handleManualControl(() => setImageIndex(index));
             }}
             className="imageslider__selection"
           >
