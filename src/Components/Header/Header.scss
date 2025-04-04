@@ -67,6 +67,7 @@
 
     &__nav {
         display: none;
+        list-style-type: none;
 
         @include tablet {
             @include flex-center(row, space-between);
