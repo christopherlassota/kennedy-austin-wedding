@@ -30,7 +30,6 @@
     left: 50%;          // Center horizontally
     transform: translate(-50%, -50%);  // Adjust for true centering
     width: 90%;         // Control width
-    max-width: 800px;   // Maximum width
 
     @include tablet {
       padding: 2rem 2rem 0 2rem;
