@@ -88,19 +88,20 @@
 .sidebar {
     @include flex-center(column, flex-start);
     gap: 8rem;
-    background-color: rgb(123,3,35,0.8);
-    backdrop-filter: blur(10px);
+    background-color: rgb(123, 3, 35, 0.8);
+    backdrop-filter: blur(20px);
     padding: 1rem;
-    height: 100%;
-    width: 40%;
-    position: fixed;
+    height: 100vh; // Extend to full viewport height
+    width: 100vw; // Extend to full viewport width
+    position: fixed; // Ensure it stays fixed over the viewport
     top: 0;
-    right: 0;
-    transform: translateX(100%);
+    left: 0; // Ensure it starts from the left edge
+    transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 10;
 
     &--active {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     @include tablet {
@@ -114,6 +115,7 @@
 
     &__nav {
         animation: appear 1s;
+        list-style-type: none;
     }
 
     &nav__item {

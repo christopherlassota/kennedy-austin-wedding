@@ -5,32 +5,39 @@
   @include flex-center(column, center);
   background-image: url(../../assets/images/Hero/IMG_2220.JPG);
   background-size: cover;
+  background-position: 50% 50%;  // Center both horizontally and vertically
   height: 90vh;  
-  background-position: center;
+  width: 100%;  // Ensure full width
   background-attachment: fixed;
   background-repeat: no-repeat;
+  position: relative;  // Add positioning context
 
   @include tablet {
     height: 80vh;
   }
 
   @include desktop {
-    height: 95vh
+    height: 95vh;
   }
 
   &__invitation {
     @include flex-center(column, flex);
-    background-color: hsla(0, 100, 28 , 0);
+    background-color: hsla(0deg, 100%, 28%, 0%);  // Fixed hsla syntax
     margin: 1rem;
     padding: 1rem;
-    // backdrop-filter: blur(10px);
+    position: absolute;  // Position the invitation
+    top: 50%;           // Center vertically
+    left: 50%;          // Center horizontally
+    transform: translate(-50%, -50%);  // Adjust for true centering
+    width: 90%;         // Control width
+    max-width: 800px;   // Maximum width
 
     @include tablet {
-        padding: 2rem 2rem 0 2rem;
+      padding: 2rem 2rem 0 2rem;
     }
 
     @include desktop {
-        padding: 2rem;
+      padding: 2rem;
     }
   }
 
