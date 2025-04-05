@@ -21,7 +21,12 @@ const Accommodation = () => {
           </div>
         </div>
       </article>
-      <a href="#" className="accommodation__button-anchor">
+      <a
+        href="https://book.passkey.com/go/KENNE0825"
+        className="accommodation__button-anchor"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <button className="accommodation__button">Book a Room</button>
       </a>
     </section>
