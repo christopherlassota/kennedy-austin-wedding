@@ -21,8 +21,8 @@ const Header = () => {
     <section className="header">
       <h4 className="header__altlogo">Kennedy and Austin</h4>
       <div className="header__logo">
-        <h2 className="header__logo-text">K</h2>
-        <h2 className="header__logo-text">A</h2>
+        <h2 className="header__logo-text-1">K</h2>
+        <h2 className="header__logo-text-2">A</h2>
       </div>
       <div className="header__menu" onClick={toggleMenu}>
         <Menu />
