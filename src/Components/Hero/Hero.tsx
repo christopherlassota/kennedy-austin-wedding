@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import { Link as Scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -8,9 +8,8 @@ const Hero = () => {
         <h1 className="hero__title">Kennedy and Austin</h1>
         <h3 className="hero__date">Saturday the 30th of August, 2025</h3>
       </article>
-      <a href="" className="hero__anchor">
         {/* <button className="hero__rsvp"> */}
-          <Scroll
+          <Link
             to="rsvp"
             spy={true}
             smooth={true}
@@ -18,9 +17,8 @@ const Hero = () => {
             duration={700}
           >
             {/* RSVP */}
-          </Scroll>
+          </Link>
         {/* </button> */}
-      </a>
     </section>
   );
 };
