@@ -3,7 +3,7 @@
 
 .hero {
   @include flex-center(column, center);
-  background-image: url(/assets/images/Hero/IMG_2220.JPG);
+  background-image: url(/assets/images/hero.jpg);  // Ensure the path is correct
   background-size: cover;
   background-position: 50% 50%;  // Center both horizontally and vertically
   height: 90vh;  
