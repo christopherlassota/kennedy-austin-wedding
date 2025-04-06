@@ -1,8 +1,8 @@
 import "./ImageSlider.scss";
-import image1 from "../../assets/images/sandy-millar-8vaQKYnawHw-unsplash.jpg";
-import image3 from "../../assets/images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg";
-import image4 from "../../assets/images/photos-by-lanty-O38Id_cyV4M-unsplash.jpg";
-import image5 from "../../assets/images/samantha-gades-x40Q9jrEVT0-unsplash.jpg";
+import image1 from "/assets/images/sandy-millar-8vaQKYnawHw-unsplash.jpg";
+import image3 from "/assets/images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg";
+import image4 from "/assets/images/photos-by-lanty-O38Id_cyV4M-unsplash.jpg";
+import image5 from "/assets/images/samantha-gades-x40Q9jrEVT0-unsplash.jpg";
 import { ChevronRight, ChevronLeft, Circle} from "lucide-react";
 import { useState, useEffect } from "react";
 
