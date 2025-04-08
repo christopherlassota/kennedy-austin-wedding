@@ -13,7 +13,7 @@ const Registry = () => {
         >
           <img
             className="registry__logo"
-            src="/src/assets/images/registrylogo.png"
+            src="/assets/images/registrylogo.png"
           />
         </a>
         <p className="registry__text">
@@ -21,7 +21,7 @@ const Registry = () => {
         </p>
       </article>
       <a
-        href="https://www.myregistry.com/wedding-registry/kennedy-laing-and-austin-bercier-chestermere-ab/4449897"
+        href="https://www.myregistry.com/wedding-registry/kennedy-laing-and-austin-bercier-chestermere-ab/4449897" 
         target="_blank"
         rel="noopener noreferrer"
         className="registry__button-anchor"

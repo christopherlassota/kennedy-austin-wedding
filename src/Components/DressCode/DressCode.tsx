@@ -31,7 +31,9 @@ const DressCode = () => {
             <div className="dresscode__image"></div>
             <div className="dresscode__learnmore-right">
             <p className="dresscode__paragraph">Traditionally, a black-tie dress code denotes a formal evening occasion, where men are meant to wear tuxedos and women, floor-length gowns. "The atmosphere is a more formal vibe," says Elaine Swann, an etiquette expert. "When a person calls for black tie, that is the standard they are attempting to create for the attendees."</p>
-            <a href="#" className="dresscode__anchor">
+            <a href="https://www.marthastewart.com/7912329/what-it-really-means-to-plan-black-tie-wedding" className="dresscode__anchor"               target="_blank"
+              rel="noopener noreferrer"
+>
                 <button className="dresscode__button">Learn More</button>
             </a>
             </div>

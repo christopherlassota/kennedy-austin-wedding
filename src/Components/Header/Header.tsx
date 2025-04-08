@@ -19,11 +19,17 @@ const Header = () => {
 
   return (
     <section className="header">
-      <h4 className="header__altlogo">Kennedy and Austin</h4>
+      <h4 className="header__altlogo">
+        <Scroll to="hero" spy={true} smooth={true} duration={700}>
+          Kennedy & Austin
+        </Scroll>
+      </h4>
+      <Scroll to="hero" spy={true} smooth={true} duration={700}>
       <div className="header__logo">
         <h2 className="header__logo-text-1">K</h2>
         <h2 className="header__logo-text-2">A</h2>
       </div>
+          </Scroll>
       <div className="header__menu" onClick={toggleMenu}>
         <Menu />
       </div>
@@ -115,42 +121,96 @@ const Header = () => {
           </div>
           <ul className="sidebar__nav">
             <li className="header__nav-item">
-              <Scroll to="hero" spy={true} smooth={true} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="hero"
+                spy={true}
+                smooth={true}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Home
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="story" spy={true} smooth={true} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="story"
+                spy={true}
+                smooth={true}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Our Story
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="reception" spy={true} smooth={true} offset={-50} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="reception"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Reception
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="ceremony" spy={true} smooth={true} offset={-125} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="ceremony"
+                spy={true}
+                smooth={true}
+                offset={-125}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Ceremony
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="dresscode" spy={true} smooth={true} offset={-125} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="dresscode"
+                spy={true}
+                smooth={true}
+                offset={-125}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Dress Code
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="accommodation" spy={true} smooth={true} offset={-125} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="accommodation"
+                spy={true}
+                smooth={true}
+                offset={-125}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Accommodation
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll to="registry" spy={true} smooth={true} offset={-70} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="registry"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 Registry
               </Scroll>
             </li>
             <li className="header__nav-item header__nav-item--highlight">
-              <Scroll to="rsvp" spy={true} smooth={true} offset={-100} duration={700} onClick={toggleMenu}>
+              <Scroll
+                to="rsvp"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={700}
+                onClick={toggleMenu}
+              >
                 RSVP
               </Scroll>
             </li>
