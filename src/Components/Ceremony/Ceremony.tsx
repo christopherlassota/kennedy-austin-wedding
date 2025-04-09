@@ -5,7 +5,7 @@ const Ceremony = () => {
         <section className="ceremony" id="ceremony">
           <div className="ceremony__title-box">
             <h3 className="ceremony__subtitle">Venue</h3>
-            <h2 className="ceremony__title">St. Mary's Cathe</h2>
+            <h2 className="ceremony__title">St. Mary's Cathedral</h2>
           </div>
           <div className="ceremony__content">
             <div className="ceremony__image"></div>
