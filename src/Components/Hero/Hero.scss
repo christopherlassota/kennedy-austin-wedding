@@ -28,7 +28,7 @@
     // background-color: hsla(0, 100%, 25%, 0.396);  // Fixed hsla syntax
     backdrop-filter: blur(3px);
     padding: 1rem 1rem 0.5rem 1rem;
-    border: 1px solid $primary-text;;
+
     @include tablet {
       padding: 2rem 2rem 0 2rem;
     }
