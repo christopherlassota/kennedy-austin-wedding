@@ -26,7 +26,6 @@ const App = () => {
       <Registry />
       <RSVP />
       <Footer />
-      <BottomDecoration />
       </section>
     </>
   );

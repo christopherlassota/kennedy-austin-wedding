@@ -1,6 +1,3 @@
-import CenterFlower from "../../Iconography/CenterFlower/CenterFlower";
-import CornerFlowerLeft from "../../Iconography/CornerFlowers/CornerFlowerLeft";
-import CornerFlowerRight from "../../Iconography/CornerFlowers/CornerFlowerRight";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import "./Story.scss";
 
@@ -8,11 +5,8 @@ const Story = () => {
   return (
     <section className="story" id="story">
       <div className="story__centerflower">
-        <CenterFlower />
       </div>
       <div className="story__cornerflowers">
-        <CornerFlowerLeft />
-        <CornerFlowerRight />
       </div>
       <article className="story__content">
         <h2 className="story__title">Our Story</h2>

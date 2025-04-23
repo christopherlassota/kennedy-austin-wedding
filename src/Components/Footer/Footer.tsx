@@ -10,6 +10,7 @@ const Footer = () => {
           <h2 className="footer__logo-text-2">A</h2>
         </div>
       </Scroll>
+        <p>Website by Christopher Lassota</p>
     </section>
   );
 };
