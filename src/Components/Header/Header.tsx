@@ -46,17 +46,6 @@ const Header = () => {
         </li>
         <li className="header__nav-item">
           <Scroll
-            to="reception"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={700}
-          >
-            Reception
-          </Scroll>
-        </li>
-        <li className="header__nav-item">
-          <Scroll
             to="ceremony"
             spy={true}
             smooth={true}
@@ -64,6 +53,17 @@ const Header = () => {
             duration={700}
           >
             Ceremony
+          </Scroll>
+        </li>
+        <li className="header__nav-item">
+          <Scroll
+            to="reception"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={700}
+          >
+            Reception
           </Scroll>
         </li>
         <li className="header__nav-item">
@@ -143,17 +143,6 @@ const Header = () => {
               </Scroll>
             </li>
             <li className="header__nav-item">
-              <Scroll
-                to="reception"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={700}
-                onClick={toggleMenu}
-              >
-                Reception
-              </Scroll>
-            </li>
             <li className="header__nav-item">
               <Scroll
                 to="ceremony"
@@ -164,6 +153,17 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 Ceremony
+              </Scroll>
+            </li>
+              <Scroll
+                to="reception"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={700}
+                onClick={toggleMenu}
+              >
+                Reception
               </Scroll>
             </li>
             <li className="header__nav-item">

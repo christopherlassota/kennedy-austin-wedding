@@ -19,8 +19,8 @@ const App = () => {
       <Header />
       <Hero />
       <Story />
-      <Reception />
       <Ceremony />
+      <Reception />
       <DressCode />
       <Accommodation />
       <Registry />

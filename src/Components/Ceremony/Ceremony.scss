@@ -9,6 +9,7 @@
     @include tablet {
         padding: 4rem 8rem;
     }
+    
     &__title-box {
         padding: 1rem 0
     }
@@ -17,18 +18,22 @@
     &__content {
         @include flex-center(column);
     }
+
     &__image {
         background-image: url(assets/images/church.jpg);
         width: 90%;
         height: 40vh;
         background-size: cover;
     }
+
     &__address {
         padding: 2rem 0;
     }
+
     &__details {
         @include flex-center(column);
     }
+
     &__time {
         font-size: 2rem;
         padding-bottom: 1rem;
