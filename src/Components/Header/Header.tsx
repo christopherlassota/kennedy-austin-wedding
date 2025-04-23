@@ -35,12 +35,13 @@ const Header = () => {
       </div>
       <ul className="header__nav">
         <li className="header__nav-item">
-          <Scroll to="hero" spy={true} smooth={true} duration={700}>
+            
+            <Scroll to="hero" spy={true} smooth={true} duration={700}>
             Home
           </Scroll>
         </li>
         <li className="header__nav-item">
-          <Scroll to="story" spy={true} smooth={true} duration={700}>
+          <Scroll to="story" spy={true} smooth={true} offset={-75} duration={700}>
             Our Story
           </Scroll>
         </li>
@@ -71,7 +72,7 @@ const Header = () => {
             to="dresscode"
             spy={true}
             smooth={true}
-            offset={-125}
+            offset={-75}
             duration={700}
           >
             Dress Code

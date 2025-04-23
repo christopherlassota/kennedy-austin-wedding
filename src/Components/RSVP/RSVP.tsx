@@ -112,7 +112,7 @@ const RSVP = () => {
           </p>
           <div className="rsvp__group">
             <div className="rsvp__field">
-              <label htmlFor="" className="rsvp__label">
+              <label htmlFor="guest_firstname" className="rsvp__label">
                 {errors.guest_firstname ? (
                   <p className="rsvp__error">{errors.guest_firstname}</p>
                 ) : (
@@ -131,7 +131,7 @@ const RSVP = () => {
               />
             </div>
             <div className="rsvp__field">
-              <label htmlFor="" className="rsvp__label">
+              <label htmlFor="guest_lastname" className="rsvp__label">
                 {errors.guest_lastname ? (
                   <p className="rsvp__error">{errors.guest_lastname}</p>
                 ) : (
@@ -151,7 +151,7 @@ const RSVP = () => {
             </div>
           </div>
           <div className="rsvp__field">
-            <label htmlFor="" className="rsvp__label">
+            <label htmlFor="contact_email" className="rsvp__label">
               {errors.contact_email ? (
                 <p className="rsvp__error">{errors.contact_email}</p>
               ) : (
@@ -207,7 +207,7 @@ const RSVP = () => {
             </label>
           </fieldset>
           <div className="rsvp__field">
-            <label htmlFor="" className="rsvp__label">
+            <label htmlFor="dietary_restrictions" className="rsvp__label">
               Dietary Restrictions
             </label>
             <input

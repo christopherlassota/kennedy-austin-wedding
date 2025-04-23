@@ -23,12 +23,15 @@
         height: 40vh;
         background-size: cover;
     }
+
     &__address {
         padding: 2rem 0;
     }
+    
     &__details {
         @include flex-center(column);
     }
+    
     &__time {
         font-size: 2rem;
         padding-bottom: 1rem;
