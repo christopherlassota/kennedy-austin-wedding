@@ -5,23 +5,6 @@
     @include flex-center(column);
     margin: 1rem;
 
-    &__centerflower {
-        padding: 2rem 0 3rem 0;
-
-        @include tablet {
-            display: none;
-        }
-    }
-
-    &__cornerflowers {
-        display: none;
-
-        @include tablet {
-            width: 100%;
-            @include flex-center(row, space-between)
-        }
-    }
-
     &__content {
         padding: 2rem 0;
 

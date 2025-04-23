@@ -4,7 +4,6 @@
 .ceremony {
     @include flex-center(column);
     padding: 1rem;
-    
 
     @include tablet {
         padding: 4rem 8rem;
@@ -14,7 +13,6 @@
         padding: 1rem 0
     }
     // &__subtitle {}
-    // &__title {}
     &__content {
         @include flex-center(column);
     }

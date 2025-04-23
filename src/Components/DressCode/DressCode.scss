@@ -2,85 +2,76 @@
 @use "../../styles/mixins" as *;
 
 .dresscode {
-    @include flex-center(column);
-    padding: 1rem;
+  @include flex-center(column);
+  padding: 1rem;
+
+  @include tablet {
+    padding: 4rem 8rem;
+  }
+
+  &__title {
+    padding-bottom: 2rem;
 
     @include tablet {
-        padding: 4rem 8rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__subtitle {
+    padding: 2rem 0;
+  }
+
+  &__span {
+    text-decoration: underline;
+  }
+
+  // &__item {}
+  &__learnmore {
+    @include flex-center(column);
+
+    @include tablet {
+      @include flex-center(row, space-between);
+      width: 100%;
+    }
+  }
+
+  &__image {
+    background-image: url(/assets/images/dresscode.png);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 50vh;
+
+    @include tablet {
+      width: 40%;
+      height: 70vh;
+    }
+  }
+
+  &__right {
+    @include flex-center(column);
+
+    @include tablet {
+      @include flex-center(column, space-between);
+      gap: 5rem;
+      width: 50%;
+      padding: 0 3rem;
+    }
+  }
+
+  &__paragraph {
+    padding: 1rem 0;
+
+    &--specific {
+      padding: 0.2rem 0;
     }
 
-    &__title-box {
-        @include flex-center(column);
-    }
-
-    // &__title {}
-    &__subtitle {
-        padding: 2rem 0;
-    }
-
-    &__span {
-        text-decoration: underline;
-    }
-
-    &__content {
-        @include tablet {
-            @include flex-center(row);
-            padding: 2rem 0;
-        }
-    }
-
-    &__list-title {
-        text-decoration: underline;
-        width: 8%;
-        align-self: flex-start;
-    }
-
-    &__list {
-        padding: 1rem 2rem;
-
-        @include tablet {
-            width: 50%;
-        }
-    }
-    // &__item {}
-    &__learnmore {
-        @include flex-center(column);
-
-        @include tablet {
-            @include flex-center(row);  
-        }
-    }
-
-    &__image {
-        background-image: url(/assets/images/dresscode.png);
-        background-size: cover;
-        width: 90%;
-        height: 50vh;
-
-        @include tablet {
-            width: 40%;
-            height: 90vh;
-        }
-    }
-
-    &__learnmore-right {
-        @include flex-center(column);
-
-        @include tablet {
-            width: 50%;
-            padding: 0 3rem;
-        }
-    }
-
-    &__paragraph {
-        padding: 1rem 0;
-
-        @include tablet {
-            padding: 1rem 0 10rem 0;
-        }
-    }
-    // &__anchor {}
-    &__button {
-        @include button;
-    }
+    // @include tablet {
+    //     padding: 1rem 0 10rem 0;
+    // }
+  }
+  // &__anchor {}
+  &__button {
+    @include button;
+  }
 }

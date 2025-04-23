@@ -143,7 +143,6 @@ const Header = () => {
               </Scroll>
             </li>
             <li className="header__nav-item">
-            <li className="header__nav-item">
               <Scroll
                 to="ceremony"
                 spy={true}
@@ -155,6 +154,7 @@ const Header = () => {
                 Ceremony
               </Scroll>
             </li>
+            <li className="header__nav-item">
               <Scroll
                 to="reception"
                 spy={true}
