@@ -86,7 +86,7 @@ const Header = () => {
             offset={-125}
             duration={700}
           >
-            Accommodation
+            Accommodations
           </Scroll>
         </li>
         <li className="header__nav-item">
@@ -188,7 +188,7 @@ const Header = () => {
                 duration={700}
                 onClick={toggleMenu}
               >
-                Accommodation
+                Accommodations
               </Scroll>
             </li>
             <li className="header__nav-item">

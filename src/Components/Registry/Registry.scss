@@ -16,54 +16,15 @@
     
     &__content {
         @include flex-center(column-reverse);
-
-        @include tablet {
-            @include flex-center(row-reverse);
-            gap: 4rem;
-        }
-
-        @include desktop {
-            gap: 6rem
-        }
     }
 
     &__anchor {
         @include flex-center;
     }
 
-    &__logo {
-        width: 80%;
-        padding: 1rem 0;
-        cursor: pointer;
-
-        @include tablet {
-            width: 100%;
-        }
-    
-        @include desktop {
-            width: 50%;
-        }
-    }
-
-
     &__title {
         padding-bottom: 2rem;
 
-        @include tablet {
-            align-self: flex-start;      
-        }
-    }
-
-    // &__text {
-    //     @include tablet {
-    //     }
-    // }
-
-    &__button-anchor {
-
-        @include tablet {
-            align-self: flex-start;
-        }
     }
 
     &__button {

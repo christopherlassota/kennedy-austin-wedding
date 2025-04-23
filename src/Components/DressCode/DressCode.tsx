@@ -10,16 +10,16 @@ const DressCode = () => {
           <div className="dresscode__content">
             <p className="dresscode__paragraph">
               Our dress code is{" "}
-              <span className="dresscode__span">Black Tie Optional</span> —
+              Black Tie Optional —
               which means you’re welcome to dress to the nines, but it’s not
               required.
             </p>
             <p className="dresscode__paragraph dresscode__paragraph--specific">
-              <span className="dresscode__span">For Men:</span> A tuxedo is
+              For Men: A tuxedo is
               welcome, though a dark suit and tie are entirely appropriate.
             </p>
             <p className="dresscode__paragraph dresscode__paragraph--specific">
-              <span className="dresscode__span">For Women:</span> A floor-length
+              For Women: A floor-length
               gown or a formal cocktail dress is recommended.
             </p>
             <p className="dresscode__paragraph">

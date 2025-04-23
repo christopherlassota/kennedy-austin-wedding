@@ -16,69 +16,14 @@
 
     &__title {
         padding-bottom: 2rem;
-
-        @include tablet {
-            align-self: flex-start;      
-        }
     }
 
     &__content {
         @include flex-center(column);
-
-        @include tablet {
-            @include flex-center(row);
-            gap: 4rem;
-        }
-
-        @include desktop {
-            gap: 6rem
-        }
     }
 
     &__anchor {
         @include flex-center;
-    }
-
-    &__discount-card {
-        background-color: #FBF8F1;
-        margin: 1rem;
-        box-shadow: 5px 5px 5px hsla(0deg, 0%, 0%, 0.3%);
-    }
-
-    &__discount-content {
-        @include flex-center(column);
-        padding: 2.5rem 1.5rem;
-
-        @include tablet {
-            padding: 4rem 6rem;
-        }
-
-    }
-
-    &__discount-title {
-        color: $secondary-text;
-        padding-bottom: 1rem;
-
-        @include tablet {
-            padding-bottom: 3rem;
-        }
-        
-    }
-
-    &__discount-text {
-        color: $secondary-text;
-        font-size: 2.5rem;
-        font-family: sans-serif;
-
-        @include tablet {
-            font-size: 3rem;
-        }
-    }
-    
-    &__button-anchor {
-        @include tablet {
-            align-self: flex-start;
-        }
     }
 
     &__button {
