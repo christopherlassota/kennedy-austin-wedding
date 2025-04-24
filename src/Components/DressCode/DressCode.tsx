@@ -15,11 +15,11 @@ const DressCode = () => {
               required.
             </p>
             <p className="dresscode__paragraph dresscode__paragraph--specific">
-              For Men: A tuxedo is
+              For men a tuxedo is
               welcome, though a dark suit and tie are entirely appropriate.
             </p>
             <p className="dresscode__paragraph dresscode__paragraph--specific">
-              For Women: A floor-length
+              For women a floor-length
               gown or a formal cocktail dress is recommended.
             </p>
             <p className="dresscode__paragraph">

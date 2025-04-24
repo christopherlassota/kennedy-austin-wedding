@@ -10,7 +10,7 @@ const Reception = () => {
         <div className="reception__image"></div>
         <h3 className="ceremony__venue">Fairmont Palliser Hotel</h3>
         <p className="reception__address">
-          133 9 Ave SW, Calgary, AB T2P 2M3, Canada
+          133 9 Ave SW, Calgary, Alberta
         </p>
         <div className="reception__details">
           <p className="reception__time">5pm</p>

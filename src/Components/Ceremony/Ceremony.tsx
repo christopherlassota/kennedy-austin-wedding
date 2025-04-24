@@ -10,7 +10,7 @@ const Ceremony = () => {
             <div className="ceremony__image"></div>
             <h3 className="ceremony__venue">St. Mary's Cathedral</h3>
             <p className="ceremony__address">
-            5504 20 St SW, Calgary, AB T3E 1R2, Canada
+            5504 20 St SW, Calgary, Alberta
             </p>
             <div className="ceremony__details">
               <p className="ceremony__time">2pm</p>
