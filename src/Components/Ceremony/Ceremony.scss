@@ -10,7 +10,7 @@
     }
     
     &__title-box {
-        padding: 1rem 0
+        padding: 1.5rem 0
     }
     // &__subtitle {}
     &__content {
@@ -24,8 +24,17 @@
         background-size: cover;
     }
 
+    &__venue {
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        @include tablet {
+            font-size: 2rem;   
+        }
+    }
+
     &__address {
-        padding: 2rem 0;
+        padding: 0 0 1rem 0;
     }
 
     &__details {
