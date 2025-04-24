@@ -102,7 +102,7 @@ const RSVP = () => {
     <section className="rsvp" id="rsvp">
       <h2 className="rsvp__title">RSVP</h2>
       <p className="rsvp__description">
-        We kindly request that your response by Wednesday, the thirtieth of July, two thousand twenty-five.
+        We kindly request your response by Wednesday, the thirtieth of July, two thousand twenty-five.
       </p>
       <div className="rsvp__render">
         <form onSubmit={handleSubmit} className="rsvp__form">
