@@ -2,58 +2,72 @@
 @use "../../styles/mixins" as *;
 
 .reception {
+  @include flex-center(column);
+  padding: 1rem;
+
+  @include tablet {
+    padding: 4rem 8rem;
+  }
+
+  &__title-box {
+    padding: 1.5rem 0;
+  }
+  // &__subtitle {}
+  // &__title {}
+  &__content {
     @include flex-center(column);
+  }
+  &__image {
+    background-image: url(/assets/images/palliser.jpg);
+    width: 90%;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $primary-text;
+
+    @include tablet {
+      height: 60vh;
+    }
+
+    @include desktop {
+      height: 70vh;
+      max-width: 75%;
+    }
+  }
+
+  &__venue {
+    font-size: 1.5rem;
     padding: 1rem;
 
     @include tablet {
-        padding: 4rem 8rem;
+      font-size: 2rem;
     }
-    
-    &__title-box {
-        padding: 1.5rem 0
-    }
-    // &__subtitle {}
-    // &__title {}
-    &__content {
-        @include flex-center(column);
-    }
-    &__image {
-        background-image: url(/assets/images/palliser.jpg);
-        width: 90%;
-        height: 40vh;
-        background-size: cover;
-        background-position: center;
-    }
+  }
 
-    &__venue {
-        font-size: 1.5rem;
-        padding: 1rem;
+  &__address {
+    padding: 0 0 1rem 0;
+  }
 
-        @include tablet {
-            font-size: 2rem;   
-        }
-    }
+  &__details {
+    @include flex-center(column);
+  }
 
-    &__address {
-        padding: 0 0 1rem 0;
-    }
-    
-    &__details {
-        @include flex-center(column);
-    }
-    
-    &__time {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-    }
+  &__time {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
 
-    &__paragraph {
-        padding: 1rem 0;
-    }
+  &__paragraph {
+    padding: 1rem 0;
 
-    // &__anchor {}
-
-    &__button {
-        @include button;
+    @include tablet {
+      padding: 1rem 4rem;
     }
+  }
+
+  // &__anchor {}
+
+  &__button {
+    @include button;
+  }
 }

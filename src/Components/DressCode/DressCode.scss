@@ -41,6 +41,8 @@
     background-position: center;
     width: 90%;
     height: 50vh;
+    border: 1px solid $primary-text;
+
 
     @include tablet {
       width: 40%;

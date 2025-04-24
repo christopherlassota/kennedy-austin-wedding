@@ -20,8 +20,19 @@
     &__image {
         background-image: url(assets/images/cathedral.jpg);
         width: 90%;
-        height: 40vh;
+        height: 45vh;
         background-size: cover;
+        background-position: center;
+        border: 1px solid $primary-text;
+
+        @include tablet {
+        height: 60vh;
+        }
+
+        @include desktop {
+        height: 70vh;
+        max-width: 75%;
+        }
     }
 
     &__venue {
@@ -48,6 +59,10 @@
 
     &__paragraph {
         padding: 1rem 0;
+
+        @include tablet {
+            padding: 1rem 4rem;
+        }
     }
 
     // &__anchor {}
