@@ -115,7 +115,7 @@ const RSVP = () => {
                 {errors.guest_firstname ? (
                   <p className="rsvp__error">{errors.guest_firstname}</p>
                 ) : (
-                  <p>
+                  <p className="rsvp__labeltext">
                     First Name <span className="rsvp__span">*</span>
                   </p>
                 )}
@@ -134,7 +134,7 @@ const RSVP = () => {
                 {errors.guest_lastname ? (
                   <p className="rsvp__error">{errors.guest_lastname}</p>
                 ) : (
-                  <p>
+                  <p className="rsvp__labeltext">
                     Last Name <span className="rsvp__span">*</span>
                   </p>
                 )}
@@ -154,7 +154,7 @@ const RSVP = () => {
               {errors.contact_email ? (
                 <p className="rsvp__error">{errors.contact_email}</p>
               ) : (
-                <p>
+                <p className="rsvp__labeltext">
                   Email Address <span className="rsvp__span">*</span>
                 </p>
               )}

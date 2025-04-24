@@ -49,6 +49,10 @@
   &__label {
     width: 90%;
   }
+
+  &__labeltext {
+    text-align: left;
+  }
   
   &__input {
     width: 100%;
@@ -60,6 +64,7 @@
   
   &__error, &__span {
     color: red;
+    text-align: left;
   }
 
   &__fieldset {
