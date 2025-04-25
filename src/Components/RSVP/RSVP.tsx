@@ -63,7 +63,7 @@ const RSVP = () => {
     toggleConfirmationModal();
     try {
       let response = await axios.put(
-        `${import.meta.env.VITE_BACKEND_URL}/rsvp`,
+        `${import.meta.env.VITE_BACKEND_URL}rsvp`,
         rsvpValues
       );
       console.log("RSVP submitted successfully", response.data);
