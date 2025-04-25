@@ -9,6 +9,7 @@ import Accommodation from "./Components/Accommodation/Accommodation";
 import DressCode from "./Components/DressCode/DressCode";
 import Reception from "./Components/Reception/Reception";
 import Ceremony from "./Components/Ceremony/Ceremony";
+import Ending from "./Components/Ending/Ending";
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
       <Registry />
       <RSVP />
       <Footer />
+      <Ending />
       </section>
     </>
   );

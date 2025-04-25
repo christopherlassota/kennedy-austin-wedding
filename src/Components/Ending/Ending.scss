@@ -1,0 +1,24 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.ending {
+  @include flex-center(column, center);
+  background-image: url(/assets/images/footer.JPG);  // Ensure the path is correct
+  background-size: cover;
+  background-position: 60% 50%;  // Center both horizontally and vertically
+  height: 80vh;  
+  width: 100%;  // Ensure full width
+  background-attachment: scroll;  // Default to scroll for mobile
+  background-repeat: no-repeat;
+  position: relative;  // Add positioning context
+  
+  @include tablet {
+    background-attachment: fixed;
+    height: 80vh;
+  }
+  
+  @include desktop {
+    background-attachment: fixed;
+    height: 95vh;
+  }
+}

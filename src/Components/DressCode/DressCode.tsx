@@ -8,6 +8,7 @@ const DressCode = () => {
         <div className="dresscode__image"></div>
         <div className="dresscode__right">
           <div className="dresscode__content">
+            <h3 className="dresscode__subtitle">Black Tie Optional</h3>
             <p className="dresscode__paragraph">
               Our dress code is{" "}
               Black Tie Optional —
@@ -28,7 +29,7 @@ const DressCode = () => {
             </p>
           </div>
           <a
-            href="https://www.marthastewart.com/7912329/what-it-really-means-to-plan-black-tie-wedding"
+            href="https://www.brides.com/black-tie-optional-wedding-attire-4800698"
             className="dresscode__anchor"
             target="_blank"
             rel="noopener noreferrer"

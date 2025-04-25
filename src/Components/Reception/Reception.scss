@@ -44,17 +44,13 @@
     }
   }
 
-  &__address {
-    padding: 0 0 1rem 0;
-  }
-
   &__details {
     @include flex-center(column);
   }
 
   &__time {
     font-size: 2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 
   &__paragraph {

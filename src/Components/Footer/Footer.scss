@@ -4,6 +4,7 @@
 .footer {
     @include flex-center(column);
     padding: 2rem;
+    border-bottom: 1px solid $primary-text;
 
     &__logo {
         @include flex-center;
