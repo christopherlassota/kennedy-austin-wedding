@@ -1,13 +1,20 @@
 import "./ImageSlider.scss";
-import image1 from "/assets/images/sandy-millar-8vaQKYnawHw-unsplash.jpg";
-import image3 from "/assets/images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg";
-import image4 from "/assets/images/photos-by-lanty-O38Id_cyV4M-unsplash.jpg";
-import image5 from "/assets/images/samantha-gades-x40Q9jrEVT0-unsplash.jpg";
+import image1 from "/assets/imageslider/1.JPG?url";
+import image2 from "/assets/imageslider/2.JPG?url";
+import image3 from "/assets/imageslider/3.JPG?url";
+import image4 from "/assets/imageslider/4.jpg?url";
+import image5 from "/assets/imageslider/5.JPG?url";
+import image6 from "/assets/imageslider/6.JPG?url";
+import image7 from "/assets/imageslider/7.JPG?url";
+import image8 from "/assets/imageslider/8.jpg?url";
+import image9 from "/assets/imageslider/9.jpg?url";
+import image10 from "/assets/imageslider/10.jpg?url";
+import image11 from "/assets/imageslider/11.jpg?url";
 import { ChevronRight, ChevronLeft, Circle} from "lucide-react";
 import { useState, useEffect } from "react";
 
 const ImageSlider = () => {
-  const imagesArray = [image1, image3, image4, image5];
+  const imagesArray = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11];
   const [imageIndex, setImageIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
