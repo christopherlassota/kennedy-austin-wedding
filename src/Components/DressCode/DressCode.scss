@@ -30,7 +30,7 @@
     @include flex-center(column);
 
     @include tablet {
-      @include flex-center(row, space-between);
+      @include flex-center(column, space-between);
       width: 100%;
     }
   }

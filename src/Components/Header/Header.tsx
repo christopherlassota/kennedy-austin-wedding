@@ -108,7 +108,7 @@ const Header = () => {
             offset={-100}
             duration={700}
           >
-            RSVP
+            Reply
           </Scroll>
         </li>
       </ul>
@@ -212,7 +212,7 @@ const Header = () => {
                 duration={700}
                 onClick={toggleMenu}
               >
-                RSVP
+                Reply
               </Scroll>
             </li>
           </ul>

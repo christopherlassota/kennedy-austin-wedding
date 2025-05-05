@@ -100,9 +100,9 @@ const RSVP = () => {
 
   return (
     <section className="rsvp" id="rsvp">
-      <h2 className="rsvp__title">RSVP</h2>
+      <h2 className="rsvp__title">Reply</h2>
       <p className="rsvp__description">
-        We kindly request your response by Wednesday, the thirtieth of July, two thousand twenty-five.
+      The favour of your reply is requested by the thirtieth of July.
       </p>
       <div className="rsvp__render">
         <form onSubmit={handleSubmit} className="rsvp__form">

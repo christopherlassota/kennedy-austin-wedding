@@ -5,8 +5,7 @@ const DressCode = () => {
     <section className="dresscode" id="dresscode">
       <h2 className="dresscode__title">Dress Code</h2>
       <div className="dresscode__learnmore">
-        <div className="dresscode__image"></div>
-        <div className="dresscode__right">
+        
           <div className="dresscode__content">
             <h3 className="dresscode__subtitle">Black Tie Optional</h3>
             <p className="dresscode__paragraph">
@@ -36,7 +35,7 @@ const DressCode = () => {
           >
             <button className="dresscode__button">Learn More</button>
           </a>
-        </div>
+        
       </div>
     </section>
   );
