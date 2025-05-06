@@ -15,7 +15,7 @@ const Ceremony = () => {
           <p className="ceremony__time">2pm</p>
           <p className="ceremony__paragraph">
             We joyfully request the honour of your presence at the celebration
-            of our marriage on Saturday, the thirtieth of August, two thousand
+            of our marriage on Saturday, the thirtieth of August, two thousand and
             twenty-five, at two o’clock in the afternoon at St. Mary’s
             Cathedral.
           </p>
