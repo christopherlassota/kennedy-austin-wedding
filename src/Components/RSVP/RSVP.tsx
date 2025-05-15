@@ -60,7 +60,6 @@ const RSVP = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!validateForm()) return;
-    toggleConfirmationModal();
     try {
       let response = await axios.put(
         `${import.meta.env.VITE_BACKEND_URL}rsvp`,
@@ -80,8 +79,13 @@ const RSVP = () => {
         contact_email: "",
         rsvp: "",
       });
+      toggleConfirmationModal();
     } catch (error) {
       console.log("Error submitting RSVP", error);
+      window.alert(
+        "We're sorry, but there was an issue submitting your RSVP. Please double-check your information and try again."
+      );
+      window.location.reload();
     }
   };
 
@@ -102,7 +106,7 @@ const RSVP = () => {
     <section className="rsvp" id="rsvp">
       <h2 className="rsvp__title">Reply</h2>
       <p className="rsvp__description">
-      The favour of your reply is requested by the thirtieth of July.
+        The favour of your reply is requested by the thirtieth of July.
       </p>
       <div className="rsvp__render">
         <form onSubmit={handleSubmit} className="rsvp__form">
