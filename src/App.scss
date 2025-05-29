@@ -1,5 +1,6 @@
 @use "./styles/variables" as *;
 @use "./styles/mixins" as *;
+@use "./styles/typography" as *;
 
 * {
   font-family: "Libre Baskerville", sans-serif;
@@ -12,7 +13,7 @@
 
 // Page Header
 h1 {
-  font-family: "Pinyon script", sans-serif;
+  font-family: "Edwardian Script ITC", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.25rem;
@@ -25,7 +26,7 @@ h1 {
 
 // Subheader
 h2 {
-  font-family: "Pinyon script", sans-serif;
+  font-family: "Edwardian Script ITC", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 2.25rem;
