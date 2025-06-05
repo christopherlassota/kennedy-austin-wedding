@@ -3,7 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import Registry from "./Components/Registry/Registry";
-import RSVP from "./Components/RSVP/RSVP";
+// import RSVP from "./Components/RSVP/RSVP";
 import Story from "./Components/Story/Story";
 import Accommodation from "./Components/Accommodation/Accommodation";
 import DressCode from "./Components/DressCode/DressCode";
@@ -24,7 +24,7 @@ const App = () => {
       <DressCode />
       <Accommodation />
       <Registry />
-      <RSVP />
+      {/* <RSVP /> */}
       <Footer />
       <Ending />
       </section>

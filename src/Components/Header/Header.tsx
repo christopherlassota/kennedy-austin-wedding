@@ -100,7 +100,7 @@ const Header = () => {
             Registry
           </Scroll>
         </li>
-        <li className="header__nav-item header__nav-item--highlight">
+        {/* <li className="header__nav-item header__nav-item--highlight">
           <Scroll
             to="rsvp"
             spy={true}
@@ -110,7 +110,7 @@ const Header = () => {
           >
             Reply
           </Scroll>
-        </li>
+        </li> */}
       </ul>
       {shouldRender && (
         <section
@@ -203,7 +203,7 @@ const Header = () => {
                 Registry
               </Scroll>
             </li>
-            <li className="header__nav-item header__nav-item--highlight">
+            {/* <li className="header__nav-item header__nav-item--highlight">
               <Scroll
                 to="rsvp"
                 spy={true}
@@ -214,7 +214,7 @@ const Header = () => {
               >
                 Reply
               </Scroll>
-            </li>
+            </li> */}
           </ul>
         </section>
       )}
