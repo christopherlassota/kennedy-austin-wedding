@@ -1,5 +1,5 @@
 import "./ImageSlider.scss";
-import image1 from "/assets/imageslider/1.jpg?url";
+import image1 from "/assets/imageslider/00.jpg?url";
 import image2 from "/assets/imageslider/2.jpg?url";
 import image3 from "/assets/imageslider/3.jpg?url";
 import image4 from "/assets/imageslider/4.jpg?url";
