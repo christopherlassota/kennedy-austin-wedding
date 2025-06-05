@@ -97,7 +97,7 @@ const Header = () => {
             offset={-70}
             duration={700}
           >
-            Registry
+            Gifts
           </Scroll>
         </li>
         {/* <li className="header__nav-item header__nav-item--highlight">
@@ -200,7 +200,7 @@ const Header = () => {
                 duration={700}
                 onClick={toggleMenu}
               >
-                Registry
+                Gifts
               </Scroll>
             </li>
             {/* <li className="header__nav-item header__nav-item--highlight">
