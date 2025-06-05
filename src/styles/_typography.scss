@@ -1,4 +1,6 @@
 @font-face {
     font-family: 'Edwardian Script ITC';
-    src: url('../../public/fonts/EdwardianScriptITC.woff2') format('woff2')
+    src: url('/fonts/EdwardianScriptITC.ttf') format('truetype'),
+         url('/fonts/EdwardianScriptITC.woff2') format('woff2');
+    font-display: swap;
 }
