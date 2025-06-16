@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero" id="hero">
       <article className="hero__invitation">
-        <h1 className="hero__title">Kennedy and Austin</h1>
+        <h1 className="hero__title">Kennedy & Austin</h1>
         <h3 className="hero__date">08. 30. 2025</h3>
       </article>
         {/* <button className="hero__rsvp"> */}
